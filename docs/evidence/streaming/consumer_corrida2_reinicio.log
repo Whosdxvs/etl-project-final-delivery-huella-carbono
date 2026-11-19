@@ -1,0 +1,116 @@
+Consumidor 'huella-stream-consumer' suscrito a 'huella-events' (broker localhost:9092).
+Estado restaurado: 323 válidos, 8 inválidos, 18 alertas. Umbral de alerta (p95 histórico): 1,868.2 kg CO2/año.
+Esperando eventos... (Ctrl+C para detener)
+
+[ALERTA] Amazonas estrato 1: 2,008.7 kg CO2/año > umbral 1,868.2
+[ALERTA] Antioquia estrato 2: 2,412.2 kg CO2/año > umbral 1,868.2
+[ALERTA] San Andrés, Providencia y Santa Catalina estrato 2: 2,188.4 kg CO2/año > umbral 1,868.2
+[ALERTA] Chocó estrato 0: 2,092.0 kg CO2/año > umbral 1,868.2
+[ALERTA] Arauca estrato 1: 1,963.5 kg CO2/año > umbral 1,868.2
+[ALERTA] Guainía estrato 2: 2,524.2 kg CO2/año > umbral 1,868.2
+Lote de 177 | válidos    500 | inválidos   8 (1.57%) | último min  177 | huella media 826.01 kg | kWh cálido 134.32 vs frío/templado 111.23 | alertas 24 | latencia 46223.9 ms
+Lote de   2 | válidos    502 | inválidos   8 (1.57%) | último min  179 | huella media 828.64 kg | kWh cálido 134.32 vs frío/templado 111.52 | alertas 24 | latencia 379.0 ms
+Lote de   1 | válidos    503 | inválidos   8 (1.57%) | último min  180 | huella media 829.17 kg | kWh cálido 134.32 vs frío/templado 111.31 | alertas 24 | latencia 7.0 ms
+Lote de   1 | válidos    504 | inválidos   8 (1.56%) | último min  181 | huella media 830.25 kg | kWh cálido 134.32 vs frío/templado 111.11 | alertas 24 | latencia 10.0 ms
+Lote de   1 | válidos    505 | inválidos   8 (1.56%) | último min  182 | huella media 829.26 kg | kWh cálido 134.29 vs frío/templado 111.11 | alertas 24 | latencia 7.0 ms
+Lote de   1 | válidos    506 | inválidos   8 (1.56%) | último min  183 | huella media 829.41 kg | kWh cálido 134.29 vs frío/templado 110.99 | alertas 24 | latencia 10.0 ms
+[ALERTA] La Guajira estrato 1: 2,130.4 kg CO2/año > umbral 1,868.2
+Lote de   1 | válidos    507 | inválidos   8 (1.55%) | último min  184 | huella media 831.98 kg | kWh cálido 136.17 vs frío/templado 110.99 | alertas 25 | latencia 7.0 ms
+Lote de   1 | válidos    508 | inválidos   8 (1.55%) | último min  185 | huella media 831.47 kg | kWh cálido 136.54 vs frío/templado 110.99 | alertas 25 | latencia 10.0 ms
+Lote de   1 | válidos    509 | inválidos   8 (1.55%) | último min  186 | huella media 831.22 kg | kWh cálido 136.75 vs frío/templado 110.99 | alertas 25 | latencia 7.0 ms
+Lote de   1 | válidos    510 | inválidos   8 (1.54%) | último min  187 | huella media 830.53 kg | kWh cálido 136.75 vs frío/templado 110.93 | alertas 25 | latencia 8.0 ms
+Lote de   1 | válidos    511 | inválidos   8 (1.54%) | último min  188 | huella media 831.07 kg | kWh cálido 136.53 vs frío/templado 110.93 | alertas 25 | latencia 11.0 ms
+Lote de   1 | válidos    512 | inválidos   8 (1.54%) | último min  189 | huella media 832.06 kg | kWh cálido 136.39 vs frío/templado 110.93 | alertas 25 | latencia 8.0 ms
+Lote de   1 | válidos    513 | inválidos   8 (1.54%) | último min  190 | huella media 831.52 kg | kWh cálido 136.2 vs frío/templado 110.93 | alertas 25 | latencia 8.0 ms
+Lote de   1 | válidos    514 | inválidos   8 (1.53%) | último min  191 | huella media 830.12 kg | kWh cálido 135.78 vs frío/templado 110.93 | alertas 25 | latencia 7.0 ms
+Lote de   1 | válidos    515 | inválidos   8 (1.53%) | último min  192 | huella media 829.79 kg | kWh cálido 135.65 vs frío/templado 110.93 | alertas 25 | latencia 8.0 ms
+Lote de   1 | válidos    516 | inválidos   8 (1.53%) | último min  193 | huella media 828.46 kg | kWh cálido 135.65 vs frío/templado 110.73 | alertas 25 | latencia 10.0 ms
+Lote de   1 | válidos    517 | inválidos   8 (1.52%) | último min  194 | huella media 829.33 kg | kWh cálido 135.24 vs frío/templado 110.73 | alertas 25 | latencia 9.0 ms
+Lote de   1 | válidos    518 | inválidos   8 (1.52%) | último min  195 | huella media 829.22 kg | kWh cálido 135.24 vs frío/templado 110.78 | alertas 25 | latencia 13.0 ms
+Lote de   1 | válidos    519 | inválidos   8 (1.52%) | último min  196 | huella media 829.72 kg | kWh cálido 135.24 vs frío/templado 111.16 | alertas 25 | latencia 7.0 ms
+Lote de   1 | válidos    520 | inválidos   8 (1.52%) | último min  197 | huella media 830.33 kg | kWh cálido 135.9 vs frío/templado 111.16 | alertas 25 | latencia 7.0 ms
+Lote de   1 | válidos    521 | inválidos   8 (1.51%) | último min  198 | huella media 830.65 kg | kWh cálido 135.9 vs frío/templado 110.84 | alertas 25 | latencia 7.0 ms
+Lote de   1 | válidos    522 | inválidos   8 (1.51%) | último min  199 | huella media 831.5 kg | kWh cálido 135.42 vs frío/templado 110.84 | alertas 25 | latencia 10.0 ms
+Lote de   1 | válidos    523 | inválidos   8 (1.51%) | último min  200 | huella media 831.68 kg | kWh cálido 135.42 vs frío/templado 110.98 | alertas 25 | latencia 8.0 ms
+Lote de   1 | válidos    524 | inválidos   8 (1.5%) | último min  201 | huella media 832.62 kg | kWh cálido 135.54 vs frío/templado 110.98 | alertas 25 | latencia 8.0 ms
+Lote de   1 | válidos    525 | inválidos   8 (1.5%) | último min  202 | huella media 832.89 kg | kWh cálido 135.87 vs frío/templado 110.98 | alertas 25 | latencia 9.0 ms
+Lote de   1 | válidos    526 | inválidos   8 (1.5%) | último min  203 | huella media 833.16 kg | kWh cálido 135.87 vs frío/templado 110.85 | alertas 25 | latencia 8.0 ms
+Lote de   1 | válidos    527 | inválidos   8 (1.5%) | último min  204 | huella media 834.74 kg | kWh cálido 135.71 vs frío/templado 110.85 | alertas 25 | latencia 10.0 ms
+Lote de   1 | válidos    528 | inválidos   8 (1.49%) | último min  205 | huella media 833.37 kg | kWh cálido 135.31 vs frío/templado 110.85 | alertas 25 | latencia 11.0 ms
+Lote de   1 | válidos    529 | inválidos   8 (1.49%) | último min  206 | huella media 832.34 kg | kWh cálido 135.2 vs frío/templado 110.85 | alertas 25 | latencia 13.0 ms
+Lote de   1 | válidos    530 | inválidos   8 (1.49%) | último min  207 | huella media 832.21 kg | kWh cálido 135.52 vs frío/templado 110.85 | alertas 25 | latencia 7.0 ms
+Lote de   1 | válidos    531 | inválidos   8 (1.48%) | último min  208 | huella media 830.81 kg | kWh cálido 135.52 vs frío/templado 110.58 | alertas 25 | latencia 7.0 ms
+Lote de   1 | válidos    532 | inválidos   8 (1.48%) | último min  209 | huella media 829.36 kg | kWh cálido 135.52 vs frío/templado 110.28 | alertas 25 | latencia 7.0 ms
+Lote de   1 | válidos    533 | inválidos   8 (1.48%) | último min  210 | huella media 829.79 kg | kWh cálido 135.52 vs frío/templado 110.46 | alertas 25 | latencia 7.0 ms
+Lote de   1 | válidos    534 | inválidos   8 (1.48%) | último min  211 | huella media 828.58 kg | kWh cálido 135.24 vs frío/templado 110.46 | alertas 25 | latencia 10.0 ms
+Lote de   1 | válidos    535 | inválidos   8 (1.47%) | último min  212 | huella media 828.57 kg | kWh cálido 135.1 vs frío/templado 110.46 | alertas 25 | latencia 15.0 ms
+Lote de   1 | válidos    536 | inválidos   8 (1.47%) | último min  213 | huella media 827.24 kg | kWh cálido 135.1 vs frío/templado 110.46 | alertas 25 | latencia 7.0 ms
+Lote de   1 | válidos    537 | inválidos   8 (1.47%) | último min  214 | huella media 826.15 kg | kWh cálido 134.92 vs frío/templado 110.46 | alertas 25 | latencia 18.0 ms
+Lote de   1 | válidos    538 | inválidos   8 (1.47%) | último min  215 | huella media 827.32 kg | kWh cálido 134.74 vs frío/templado 110.46 | alertas 25 | latencia 8.0 ms
+Lote de   1 | válidos    539 | inválidos   8 (1.46%) | último min  216 | huella media 826.24 kg | kWh cálido 134.57 vs frío/templado 110.46 | alertas 25 | latencia 9.0 ms
+Lote de   1 | válidos    540 | inválidos   8 (1.46%) | último min  217 | huella media 825.22 kg | kWh cálido 134.57 vs frío/templado 110.25 | alertas 25 | latencia 9.0 ms
+Lote de   1 | válidos    541 | inválidos   8 (1.46%) | último min  218 | huella media 825.47 kg | kWh cálido 134.57 vs frío/templado 110.32 | alertas 25 | latencia 7.0 ms
+Lote de   1 | válidos    542 | inválidos   8 (1.45%) | último min  219 | huella media 824.92 kg | kWh cálido 134.0 vs frío/templado 110.32 | alertas 25 | latencia 8.0 ms
+Lote de   1 | válidos    543 | inválidos   8 (1.45%) | último min  220 | huella media 823.62 kg | kWh cálido 133.63 vs frío/templado 110.32 | alertas 25 | latencia 10.0 ms
+[ALERTA] Cundinamarca estrato 2: 1,956.7 kg CO2/año > umbral 1,868.2
+Lote de   1 | válidos    544 | inválidos   8 (1.45%) | último min  221 | huella media 825.7 kg | kWh cálido 133.63 vs frío/templado 110.3 | alertas 26 | latencia 7.0 ms
+Lote de   1 | válidos    545 | inválidos   8 (1.45%) | último min  222 | huella media 825.41 kg | kWh cálido 133.63 vs frío/templado 110.29 | alertas 26 | latencia 9.0 ms
+Lote de   1 | válidos    546 | inválidos   8 (1.44%) | último min  223 | huella media 825.71 kg | kWh cálido 133.63 vs frío/templado 110.06 | alertas 26 | latencia 7.0 ms
+Lote de   1 | válidos    547 | inválidos   8 (1.44%) | último min  224 | huella media 826.34 kg | kWh cálido 133.63 vs frío/templado 110.04 | alertas 26 | latencia 8.0 ms
+Lote de   1 | válidos    548 | inválidos   8 (1.44%) | último min  225 | huella media 827.63 kg | kWh cálido 133.63 vs frío/templado 110.3 | alertas 26 | latencia 7.0 ms
+Lote de   1 | válidos    549 | inválidos   8 (1.44%) | último min  226 | huella media 828.47 kg | kWh cálido 133.63 vs frío/templado 110.66 | alertas 26 | latencia 13.0 ms
+Lote de   1 | válidos    550 | inválidos   8 (1.43%) | último min  227 | huella media 828.29 kg | kWh cálido 133.45 vs frío/templado 110.66 | alertas 26 | latencia 7.0 ms
+Lote de   1 | válidos    551 | inválidos   8 (1.43%) | último min  228 | huella media 829.09 kg | kWh cálido 133.22 vs frío/templado 110.66 | alertas 26 | latencia 16.0 ms
+Lote de   1 | válidos    552 | inválidos   8 (1.43%) | último min  229 | huella media 828.7 kg | kWh cálido 133.19 vs frío/templado 110.66 | alertas 26 | latencia 7.0 ms
+Lote de   1 | válidos    553 | inválidos   8 (1.43%) | último min  230 | huella media 828.02 kg | kWh cálido 133.09 vs frío/templado 110.66 | alertas 26 | latencia 8.0 ms
+Lote de   1 | válidos    554 | inválidos   8 (1.42%) | último min  231 | huella media 826.58 kg | kWh cálido 132.59 vs frío/templado 110.66 | alertas 26 | latencia 14.0 ms
+Lote de   1 | válidos    555 | inválidos   8 (1.42%) | último min  232 | huella media 826.82 kg | kWh cálido 132.57 vs frío/templado 110.66 | alertas 26 | latencia 8.0 ms
+Lote de   1 | válidos    556 | inválidos   8 (1.42%) | último min  233 | huella media 827.2 kg | kWh cálido 132.57 vs frío/templado 110.47 | alertas 26 | latencia 10.0 ms
+Lote de   1 | válidos    557 | inválidos   8 (1.42%) | último min  234 | huella media 827.5 kg | kWh cálido 132.57 vs frío/templado 110.66 | alertas 26 | latencia 22.0 ms
+[ALERTA] Córdoba estrato 1: 2,141.9 kg CO2/año > umbral 1,868.2
+Lote de   1 | válidos    558 | inválidos   8 (1.41%) | último min  235 | huella media 829.86 kg | kWh cálido 134.25 vs frío/templado 110.66 | alertas 27 | latencia 8.0 ms
+Lote de   1 | válidos    559 | inválidos   8 (1.41%) | último min  236 | huella media 830.66 kg | kWh cálido 134.98 vs frío/templado 110.66 | alertas 27 | latencia 8.0 ms
+Lote de   1 | válidos    560 | inválidos   8 (1.41%) | último min  237 | huella media 830.41 kg | kWh cálido 134.98 vs frío/templado 110.38 | alertas 27 | latencia 7.0 ms
+Lote de   1 | válidos    561 | inválidos   8 (1.41%) | último min  238 | huella media 831.71 kg | kWh cálido 134.59 vs frío/templado 110.38 | alertas 27 | latencia 9.0 ms
+Lote de   1 | válidos    562 | inválidos   8 (1.4%) | último min  239 | huella media 832.13 kg | kWh cálido 134.59 vs frío/templado 110.3 | alertas 27 | latencia 8.0 ms
+Lote de   1 | válidos    563 | inválidos   8 (1.4%) | último min  240 | huella media 832.55 kg | kWh cálido 135.35 vs frío/templado 110.3 | alertas 27 | latencia 8.0 ms
+Lote de   1 | válidos    564 | inválidos   8 (1.4%) | último min  241 | huella media 834.14 kg | kWh cálido 136.67 vs frío/templado 110.3 | alertas 27 | latencia 16.0 ms
+Lote de   1 | válidos    565 | inválidos   8 (1.4%) | último min  242 | huella media 833.54 kg | kWh cálido 136.67 vs frío/templado 110.09 | alertas 27 | latencia 10.0 ms
+Lote de   1 | válidos    566 | inválidos   8 (1.39%) | último min  243 | huella media 833.33 kg | kWh cálido 136.67 vs frío/templado 110.19 | alertas 27 | latencia 9.0 ms
+Lote de   1 | válidos    567 | inválidos   8 (1.39%) | último min  244 | huella media 832.06 kg | kWh cálido 136.3 vs frío/templado 110.19 | alertas 27 | latencia 8.0 ms
+Lote de   1 | válidos    568 | inválidos   8 (1.39%) | último min  245 | huella media 831.49 kg | kWh cálido 136.13 vs frío/templado 110.19 | alertas 27 | latencia 8.0 ms
+Lote de   1 | válidos    569 | inválidos   8 (1.39%) | último min  246 | huella media 830.23 kg | kWh cálido 135.76 vs frío/templado 110.19 | alertas 27 | latencia 7.0 ms
+Lote de   1 | válidos    570 | inválidos   8 (1.38%) | último min  247 | huella media 830.96 kg | kWh cálido 135.76 vs frío/templado 110.68 | alertas 27 | latencia 7.0 ms
+Lote de   1 | válidos    571 | inválidos   8 (1.38%) | último min  248 | huella media 832.11 kg | kWh cálido 135.76 vs frío/templado 110.86 | alertas 27 | latencia 7.0 ms
+Lote de   1 | válidos    572 | inválidos   8 (1.38%) | último min  249 | huella media 831.67 kg | kWh cálido 135.8 vs frío/templado 110.86 | alertas 27 | latencia 6.0 ms
+Lote de   1 | válidos    573 | inválidos   8 (1.38%) | último min  250 | huella media 830.41 kg | kWh cálido 135.44 vs frío/templado 110.86 | alertas 27 | latencia 9.0 ms
+Lote de   1 | válidos    574 | inválidos   8 (1.37%) | último min  251 | huella media 829.17 kg | kWh cálido 135.08 vs frío/templado 110.86 | alertas 27 | latencia 9.0 ms
+Lote de   1 | válidos    575 | inválidos   8 (1.37%) | último min  252 | huella media 830.52 kg | kWh cálido 135.48 vs frío/templado 110.86 | alertas 27 | latencia 7.0 ms
+Lote de   1 | válidos    576 | inválidos   8 (1.37%) | último min  253 | huella media 829.56 kg | kWh cálido 135.48 vs frío/templado 110.84 | alertas 27 | latencia 11.0 ms
+Lote de   1 | válidos    577 | inválidos   8 (1.37%) | último min  254 | huella media 828.24 kg | kWh cálido 135.48 vs frío/templado 110.57 | alertas 27 | latencia 24.0 ms
+Lote de   1 | válidos    578 | inválidos   8 (1.37%) | último min  255 | huella media 828.63 kg | kWh cálido 135.48 vs frío/templado 110.51 | alertas 27 | latencia 8.0 ms
+[ALERTA] Cesar estrato 0: 2,834.8 kg CO2/año > umbral 1,868.2
+Lote de   1 | válidos    579 | inválidos   8 (1.36%) | último min  256 | huella media 832.09 kg | kWh cálido 138.15 vs frío/templado 110.51 | alertas 28 | latencia 8.0 ms
+Lote de   1 | válidos    580 | inválidos   8 (1.36%) | último min  257 | huella media 832.93 kg | kWh cálido 137.91 vs frío/templado 110.51 | alertas 28 | latencia 8.0 ms
+Lote de   1 | válidos    581 | inválidos   8 (1.36%) | último min  258 | huella media 832.76 kg | kWh cálido 137.91 vs frío/templado 110.37 | alertas 28 | latencia 7.0 ms
+Lote de   1 | válidos    582 | inválidos   8 (1.36%) | último min  259 | huella media 831.88 kg | kWh cálido 137.91 vs frío/templado 110.27 | alertas 28 | latencia 7.0 ms
+[ALERTA] Guainía estrato 2: 2,605.2 kg CO2/año > umbral 1,868.2
+Lote de   1 | válidos    583 | inválidos   8 (1.35%) | último min  260 | huella media 834.92 kg | kWh cálido 138.73 vs frío/templado 110.27 | alertas 29 | latencia 12.0 ms
+Lote de   1 | válidos    584 | inválidos   8 (1.35%) | último min  261 | huella media 834.81 kg | kWh cálido 138.73 vs frío/templado 110.16 | alertas 29 | latencia 9.0 ms
+Lote de   1 | válidos    585 | inválidos   8 (1.35%) | último min  262 | huella media 834.25 kg | kWh cálido 138.73 vs frío/templado 110.0 | alertas 29 | latencia 10.0 ms
+Lote de   1 | válidos    586 | inválidos   8 (1.35%) | último min  263 | huella media 833.02 kg | kWh cálido 138.36 vs frío/templado 110.0 | alertas 29 | latencia 8.0 ms
+Lote de   1 | válidos    587 | inválidos   8 (1.34%) | último min  264 | huella media 833.25 kg | kWh cálido 138.33 vs frío/templado 110.0 | alertas 29 | latencia 6.0 ms
+Lote de   1 | válidos    588 | inválidos   8 (1.34%) | último min  265 | huella media 834.24 kg | kWh cálido 139.13 vs frío/templado 110.0 | alertas 29 | latencia 7.0 ms
+Lote de   1 | válidos    589 | inválidos   8 (1.34%) | último min  266 | huella media 833.67 kg | kWh cálido 139.13 vs frío/templado 109.99 | alertas 29 | latencia 7.0 ms
+Lote de   1 | válidos    590 | inválidos   8 (1.34%) | último min  267 | huella media 832.71 kg | kWh cálido 139.13 vs frío/templado 109.96 | alertas 29 | latencia 9.0 ms
+Lote de   1 | válidos    591 | inválidos   8 (1.34%) | último min  268 | huella media 833.23 kg | kWh cálido 139.13 vs frío/templado 109.94 | alertas 29 | latencia 7.0 ms
+Lote de   1 | válidos    592 | inválidos   8 (1.33%) | último min  269 | huella media 833.97 kg | kWh cálido 139.13 vs frío/templado 109.78 | alertas 29 | latencia 9.0 ms
+Lote de   1 | válidos    593 | inválidos   8 (1.33%) | último min  270 | huella media 833.1 kg | kWh cálido 139.13 vs frío/templado 109.62 | alertas 29 | latencia 7.0 ms
+Lote de   1 | válidos    594 | inválidos   8 (1.33%) | último min  271 | huella media 832.34 kg | kWh cálido 139.13 vs frío/templado 109.73 | alertas 29 | latencia 8.0 ms
+Lote de   1 | válidos    595 | inválidos   8 (1.33%) | último min  272 | huella media 831.32 kg | kWh cálido 139.13 vs frío/templado 109.65 | alertas 29 | latencia 8.0 ms
+Lote de   1 | válidos    596 | inválidos   8 (1.32%) | último min  273 | huella media 832.68 kg | kWh cálido 140.16 vs frío/templado 109.65 | alertas 29 | latencia 12.0 ms
+Lote de   1 | válidos    597 | inválidos   8 (1.32%) | último min  274 | huella media 833.88 kg | kWh cálido 139.77 vs frío/templado 109.65 | alertas 29 | latencia 10.0 ms
+Lote de   1 | válidos    598 | inválidos   8 (1.32%) | último min  275 | huella media 832.95 kg | kWh cálido 139.77 vs frío/templado 109.64 | alertas 29 | latencia 8.0 ms
+Lote de   1 | válidos    599 | inválidos   8 (1.32%) | último min  276 | huella media 831.78 kg | kWh cálido 139.77 vs frío/templado 109.45 | alertas 29 | latencia 7.0 ms
+[ALERTA] Boyacá estrato 2: 2,827.4 kg CO2/año > umbral 1,868.2
+Lote de   1 | válidos    600 | inválidos   8 (1.32%) | último min  277 | huella media 835.11 kg | kWh cálido 139.77 vs frío/templado 110.47 | alertas 30 | latencia 7.0 ms

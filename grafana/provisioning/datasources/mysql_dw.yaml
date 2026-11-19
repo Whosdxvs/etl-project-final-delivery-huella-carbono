@@ -1,0 +1,21 @@
+# Conexión de Grafana al Data Warehouse MySQL (tablas stream_* de la capa de streaming).
+# Las variables salen del entorno del contenedor (docker-compose.yaml lee el .env);
+# la contraseña no se guarda en el repositorio.
+apiVersion: 1
+datasources:
+  - name: DW MySQL
+    uid: dw-mysql
+    type: mysql
+    access: proxy
+    url: ${GRAFANA_DW_HOST}
+    user: ${MYSQL_USER}
+    isDefault: true
+    editable: false
+    jsonData:
+      database: ${MYSQL_DATABASE}
+      maxOpenConns: 5
+      maxIdleConns: 2
+      connMaxLifetime: 14400
+      timezone: "+00:00"
+    secureJsonData:
+      password: ${MYSQL_PASSWORD}

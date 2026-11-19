@@ -284,6 +284,35 @@ services:
       KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
       KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      # Los eventos se conservan 7 días (para re-procesar si el consumidor se detiene)
+      KAFKA_LOG_RETENTION_HOURS: 168
+
+  # Dashboard en tiempo real (Entrega Final). Lee las tablas stream_* del DW,
+  # que escribe el consumidor de Kafka. Conexión y dashboard se cargan solos
+  # desde grafana/provisioning y grafana/dashboards. http://localhost:3000
+  grafana:
+    image: grafana/grafana:11.3.0
+    ports:
+      - "3000:3000"
+    environment:
+      # Dentro de Docker el DW es mysql-dw:3306. Se puede cambiar en el .env
+      GRAFANA_DW_HOST: ${GRAFANA_DW_HOST:-mysql-dw:3306}
+      MYSQL_USER: ${MYSQL_USER:?Falta MYSQL_USER en .env}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:?Falta MYSQL_PASSWORD en .env}
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-huella_carbono_dw_v2}
+      GF_SECURITY_ADMIN_USER: admin
+      GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_ADMIN_PASSWORD:?Falta GRAFANA_ADMIN_PASSWORD en .env}
+      # Solo lectura sin iniciar sesión (entorno local de demostración)
+      GF_AUTH_ANONYMOUS_ENABLED: "true"
+      GF_AUTH_ANONYMOUS_ORG_ROLE: Viewer
+      GF_DASHBOARDS_DEFAULT_HOME_DASHBOARD_PATH: /var/lib/grafana/dashboards/huella_streaming.json
+      GF_DASHBOARDS_MIN_REFRESH_INTERVAL: 5s
+      GF_ANALYTICS_REPORTING_ENABLED: "false"
+      GF_ANALYTICS_CHECK_FOR_UPDATES: "false"
+    volumes:
+      - ./grafana/provisioning:/etc/grafana/provisioning:ro
+      - ./grafana/dashboards:/var/lib/grafana/dashboards:ro
+    restart: always
 
 volumes:
   postgres-db-volume:

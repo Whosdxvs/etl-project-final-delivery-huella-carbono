@@ -1,7 +1,7 @@
 """
 LOAD — carga dimensional al Data Warehouse MySQL con re-ejecucion segura (Prueba C).
 
-Estrategia (README, secciones 15 y 20):
+Estrategia (README, secciones 6.2 y 11.3):
   1. El esquema (sql/dw_schema.sql) se aplica con CREATE TABLE IF NOT EXISTS, FUERA de la
      transaccion: en MySQL el DDL confirma de forma implicita, por eso TRUNCATE tampoco es atomico.
   2. Dentro de UNA transaccion: DELETE (hechos primero, luego dimensiones) -> INSERT (dimensiones

@@ -1,0 +1,602 @@
+Productor listo: 600 hogares para re-emitir a 'huella-events' a 2 eventos/s (broker localhost:9092). Ctrl+C para detener.
+[     1] p0 o0       key=88  San Andrés, Provid estrato 2 Cálido    huella=   537.3 kg
+[     2] p1 o0       key=86  Putumayo           estrato 2 Templado  huella=   254.8 kg
+[     3] p0 o1       key=5   Antioquia          estrato 2 Templado  huella=   625.7 kg
+[     4] p0 o2       key=15  Boyacá             estrato 2 Frío      huella=    54.0 kg
+[     5] p1 o1       key=19  Cauca              estrato 1 Templado  huella=   114.8 kg
+[     6] p1 o2       key=95  Guaviare           estrato 1 Cálido    huella=   245.6 kg
+[     7] p0 o3       key=15  Boyacá             estrato 2 Frío      huella=   384.6 kg
+[     8] p0 o4       key=70  Sucre              estrato 1 Cálido    huella=  1574.1 kg
+[     9] p1 o3       key=94  Guainía            estrato 0 Cálido    huella=   114.8 kg
+[    10] p1 o4       key=68  Santander          estrato 2 Templado  huella=   129.7 kg
+[    11] p0 o5       key=8   Atlántico          estrato 0 Cálido    huella=   114.8 kg
+[    12] p0 o6       key=25  Cundinamarca       estrato 2 Frío      huella=   741.6 kg
+[    13] p1 o5       key=94  Guainía            estrato 0 Cálido    huella=   114.8 kg
+[    14] p0 o7       key=8   Atlántico          estrato 1 Cálido    huella=  1432.0 kg
+[    15] p1 o6       key=95  Guaviare           estrato 1 Cálido    huella=  1582.7 kg
+[    16] p2 o0       key=41  Huila              estrato 1 Templado  huella=  1219.4 kg
+[    17] p2 o1       key=85  Casanare           estrato 1 Cálido    huella=   826.1 kg
+[    18] p0 o8       key=47  Magdalena          estrato 2 Cálido    huella=  1825.5 kg
+[    19] p1 o7       key=66  Risaralda          estrato 2 Templado  huella=   630.3 kg
+[    20] p0 o9       key=5   Antioquia          estrato 2 Templado  huella=  1384.0 kg
+[    21] p0 o10      key=99  Vichada            estrato 2 Cálido    huella=   333.5 kg
+[    22] p1 o8       key=19  Cauca              estrato 1 Templado  huella=  1404.8 kg
+[    23] p0 o11      key=5   Antioquia          estrato 4 Templado  huella=   296.3 kg
+[    24] p1 o9       key=18  Caquetá            estrato 1 Cálido    huella=   453.9 kg
+[    25] p1 o10      key=13  Bolívar            estrato 6 Cálido    huella=  2434.8 kg
+[    26] p0 o12      key=5   Antioquia          estrato 1 Templado  huella=  1348.8 kg
+[    27] p1 o11      key=94  Guainía            estrato 0 Cálido    huella=   114.8 kg
+[    28] p0 o13      key=17  Caldas             estrato 2 Frío      huella=   505.3 kg
+[    29] p2 o2       key=91  Amazonas           estrato 2 Cálido    huella=   301.1 kg
+[    30] p0 o14      key=47  Magdalena          estrato 1 Cálido    huella=   634.0 kg
+[    31] p0 o15      key=8   Atlántico          estrato 1 Cálido    huella=   607.4 kg
+[    32] p1 o12      key=86  Putumayo           estrato 0 Templado  huella=   114.8 kg
+[    33] p0 o16      key=11  Bogotá D.C.        estrato 2 Frío      huella=   162.1 kg
+[    34] p1 o13      key=66  Risaralda          estrato 4 Templado  huella=  1019.4 kg
+[    35] p2 o3       key=73  Tolima             estrato 2 Templado  huella=   626.0 kg
+[    36] p0 o17      key=99  Vichada            estrato 1 Cálido    huella=   149.2 kg
+[    37] p0 o18      key=27  Chocó              estrato 0 Cálido    huella=   114.8 kg
+[    38] p0 o19      key=54  Norte de Santander estrato 3 Templado  huella=   266.7 kg
+[    39] p1 o14      key=81  Arauca             estrato 1 Frío      huella=  1037.4 kg
+[    40] p1 o15      key=18  Caquetá            estrato 1 Cálido    huella=   344.3 kg
+[    41] p1 o16      key=68  Santander          estrato 1 Templado  huella=   822.5 kg
+[    42] p0 o20      key=54  Norte de Santander estrato 2 Templado  huella=  1899.3 kg
+[    43] p2 o4       key=91  Amazonas           estrato 1 Cálido    huella=  1773.6 kg
+[    44] p1 o17      key=20  Cesar              estrato 1 Cálido    huella=  1476.8 kg
+[    45] p1 o18      key=81  Arauca             estrato 1 Frío      huella=   446.5 kg
+[    46] p0 o21      key=25  Cundinamarca       estrato 1 Frío      huella=   281.7 kg
+[    47] p2 o5       key=85  Casanare           estrato 2 Cálido    huella=   360.0 kg
+[    48] p2 o6       key=41  Huila              estrato 2 Templado  huella=  1900.6 kg
+[    49] p1 o19      key=18  Caquetá            estrato 0 Cálido    huella=  1234.0 kg
+[    50] p0 o22      key=5   Antioquia          estrato 1 Templado  huella=  1332.7 kg
+[    51] p0 o23      key=17  Caldas             estrato 1 Frío      huella=  1385.2 kg
+[    52] p0 o24      key=99  Vichada            estrato 0 Cálido    huella=  1457.9 kg
+[    53] p2 o7       key=85  Casanare           estrato 3 Cálido    huella=   815.1 kg
+[    54] p0 o25      key=44  La Guajira         estrato 1 Cálido    huella=   892.3 kg
+[    55] p1 o20      key=18  Caquetá            estrato 1 Cálido    huella=   419.5 kg
+[    56] p0 o26      key=11  Bogotá D.C.        estrato 1 Frío      huella=   114.8 kg
+[    57] p2 o8       key=85  Casanare           estrato 3 Cálido    huella=   266.7 kg
+[    58] p1 o21      key=20  Cesar              estrato 3 Cálido    huella=  1040.7 kg
+[    59] p1 o22      key=19  Cauca              estrato 2 Templado  huella=   486.8 kg
+[    60] p1 o23      key=18  Caquetá            estrato 1 Cálido    huella=   398.3 kg
+[    61] p0 o27      key=44  La Guajira         estrato 1 Cálido    huella=   782.9 kg
+[    62] p0 o28      key=5   Antioquia          estrato 2 Templado  huella=   746.3 kg
+[    63] p1 o24      key=95  Guaviare           estrato 1 Cálido    huella=  1727.6 kg
+[    64] p0 o29      key=8   Atlántico          estrato 1 Cálido    huella=   746.5 kg
+[    65] p2 o9       key=85  Casanare           estrato 1 Cálido    huella=  1252.9 kg
+[    66] p1 o25      key=86  Putumayo           estrato 1 Templado  huella=   759.1 kg
+[    67] p1 o26      key=81  Arauca             estrato 1 Frío      huella=   790.6 kg
+[    68] p0 o30      key=8   Atlántico          estrato 3 Cálido    huella=  2619.1 kg
+[    69] p1 o27      key=19  Cauca              estrato 1 Templado  huella=   183.7 kg
+[    70] p2 o10      key=41  Huila              estrato 1 Templado  huella=  1794.9 kg
+[    71] p0 o31      key=17  Caldas             estrato 1 Frío      huella=   917.4 kg
+[    72] p1 o28      key=95  Guaviare           estrato 0 Cálido    huella=   114.8 kg
+[    73] p1 o29      key=86  Putumayo           estrato 1 Templado  huella=   206.6 kg
+[    74] p1 o30      key=66  Risaralda          estrato 2 Templado  huella=   625.7 kg
+[    75] p0 o32      key=11  Bogotá D.C.        estrato 4 Frío      huella=   480.7 kg
+[    76] p2 o11      key=85  Casanare           estrato 0 Cálido    huella=   197.4 kg
+[    77] p1 o31      key=86  Putumayo           estrato 1 Templado  huella=  1295.7 kg
+[    78] p1 o32      key=19  Cauca              estrato 2 Templado  huella=   509.8 kg
+[    79] p2 o12      key=50  Meta               estrato 1 Cálido    huella=  1320.1 kg
+[    80] p0 o33      key=99  Vichada            estrato 0 Cálido    huella=   114.8 kg
+[    81] p2 o13      key=41  Huila              estrato 2 Templado  huella=  1360.5 kg
+[    82] p1 o33      key=81  Arauca             estrato 2 Frío      huella=  1128.5 kg
+[    83] p0 o34      key=5   Antioquia          estrato 1 Templado  huella=  1252.9 kg
+[    84] p1 o34      key=18  Caquetá            estrato 0 Cálido    huella=   114.8 kg
+[    85] p1 o35      key=19  Cauca              estrato 2 Templado  huella=   542.3 kg
+[    86] p1 o36      key=95  Guaviare           estrato 1 Cálido    huella=  1721.7 kg
+[    87] p0 o35      key=88  San Andrés, Provid estrato 3 Cálido    huella=   266.7 kg
+[    88] p0 o36      key=15  Boyacá             estrato 2 Frío      huella=  1238.4 kg
+[    89] p0 o37      key=25  Cundinamarca       estrato 3 Frío      huella=  1911.6 kg
+[    90] p1 o37      key=94  Guainía            estrato 1 Cálido    huella=   992.9 kg
+[    91] p1 o38      key=19  Cauca              estrato 4 Templado  huella=   291.9 kg
+[    92] p1 o39      key=13  Bolívar            estrato 1 Cálido    huella=   663.0 kg
+[    93] p1 o40      key=20  Cesar              estrato 4 Cálido    huella=   897.3 kg
+[    94] p1 o41      key=86  Putumayo           estrato 1 Templado  huella=   695.9 kg
+[    95] p2 o14      key=85  Casanare           estrato 1 Cálido    huella=   245.6 kg
+[    96] p2 o15      key=91  Amazonas           estrato 2 Cálido    huella=  2037.8 kg
+[    97] p1 o42      key=81  Arauca             estrato 2 Frío      huella=   788.1 kg
+[    98] p0 o38      key=5   Antioquia          estrato 1 Templado  huella=  1252.9 kg
+[    99] p0 o39      key=25  Cundinamarca       estrato 2 Frío      huella=   574.5 kg
+[   100] p1 o43      key=94  Guainía            estrato 1 Cálido    huella=  1475.1 kg
+[   101] p1 o44      key=20  Cesar              estrato 1 Cálido    huella=   812.2 kg
+[   102] p0 o40      key=5   Antioquia          estrato 1 Templado  huella=  2145.6 kg
+[   103] p1 o45      key=19  Cauca              estrato 1 Templado  huella=     0.0 kg
+[   104] p1 o46      key=86  Putumayo           estrato 0 Templado  huella=   114.8 kg
+[   105] p2 o16      key=91  Amazonas           estrato 3 Cálido    huella=  1162.1 kg
+[   106] p1 o47      key=68  Santander          estrato 1 Templado  huella=   635.5 kg
+[   107] p1 o48      key=19  Cauca              estrato 1 Templado  huella=   872.4 kg
+[   108] p1 o49      key=13  Bolívar            estrato 1 Cálido    huella=   595.5 kg
+[   109] p1 o50      key=13  Bolívar            estrato 2 Cálido    huella=  2270.0 kg
+[   110] p1 o51      key=13  Bolívar            estrato 0 Cálido    huella=   114.8 kg
+[   111] p1 o52      key=81  Arauca             estrato 1 Frío      huella=  1139.9 kg
+[   112] p0 o41      key=27  Chocó              estrato 0 Cálido    huella=   114.8 kg
+[   113] p0 o42      key=70  Sucre              estrato 1 Cálido    huella=  1420.8 kg
+[   114] p2 o17      key=41  Huila              estrato 2 Templado  huella=  1436.7 kg
+[   115] p0 o43      key=17  Caldas             estrato 3 Frío      huella=  1019.8 kg
+[   116] p2 o18      key=97  Vaupés             estrato 1 Sin clima huella=    71.7 kg
+[   117] p0 o44      key=70  Sucre              estrato 1 Cálido    huella=   182.5 kg
+[   118] p2 o19      key=97  Vaupés             estrato 0 Sin clima huella=   114.8 kg
+[   119] p2 o20      key=41  Huila              estrato 0 Templado  huella=   980.2 kg
+[   120] p0 o45      key=76  Valle del Cauca    estrato 1 Templado  huella=   621.2 kg
+[   121] p0 o46      key=5   Antioquia          estrato 2 Templado  huella=   815.9 kg
+[   122] p0 o47      key=52  Nariño             estrato 1 Frío      huella=   271.2 kg
+[   123] p0 o48      key=15  Boyacá             estrato 5 Frío      huella=   322.3 kg
+[   124] p1 o53      key=66  Risaralda          estrato 4 Templado  huella=   291.9 kg
+[   125] p0 o49      key=70  Sucre              estrato 1 Cálido    huella=   495.7 kg
+[   126] p0 o50      key=5   Antioquia          estrato 2 Templado  huella=  3304.6 kg
+[   127] p1 o54      key=18  Caquetá            estrato 0 Cálido    huella=  1234.0 kg
+[   128] p0 o51      key=44  La Guajira         estrato 0 Cálido    huella=   114.8 kg
+[   129] p1 o55      key=18  Caquetá            estrato 1 Cálido    huella=   241.0 kg
+[   130] p2 o21      key=41  Huila              estrato 1 Templado  huella=   688.5 kg
+[   131] p1 o56      key=95  Guaviare           estrato 1 Cálido    huella=   417.4 kg
+[   132] p1 o57      key=13  Bolívar            estrato 1 Cálido    huella=  1364.9 kg
+[   133] p2 o22      key=73  Tolima             estrato 1 Templado  huella=  1518.1 kg
+[   134] p1 o58      key=68  Santander          estrato 2 Templado  huella=   607.0 kg
+[   135] p0 o52      key=52  Nariño             estrato 1 Frío      huella=  1743.4 kg
+[   136] p0 o53      key=47  Magdalena          estrato 0 Cálido    huella=   114.8 kg
+[   137] p1 o59      key=13  Bolívar            estrato 2 Cálido    huella=   834.1 kg
+[   138] p0 o54      key=44  La Guajira         estrato 1 Cálido    huella=   652.2 kg
+[   139] p0 o55      key=5   Antioquia          estrato 2 Templado  huella=   926.3 kg
+[   140] p1 o60      key=94  Guainía            estrato 0 Cálido    huella=   114.8 kg
+[   141] p2 o23      key=91  Amazonas           estrato 2 Cálido    huella=  1561.5 kg
+[   142] p0 o56      key=54  Norte de Santander estrato 1 Templado  huella=   583.6 kg
+[   143] p0 o57      key=5   Antioquia          estrato 2 Templado  huella=  2454.7 kg
+[   144] p0 o58      key=47  Magdalena          estrato 2 Cálido    huella=  1066.2 kg
+[   145] p0 o59      key=5   Antioquia          estrato 3 Templado  huella=  1210.4 kg
+[   146] p0 o60      key=47  Magdalena          estrato 1 Cálido    huella=   663.0 kg
+[   147] p0 o61      key=54  Norte de Santander estrato 1 Templado  huella=  1522.4 kg
+[   148] p0 o62      key=23  Córdoba            estrato 1 Cálido    huella=   143.5 kg
+[   149] p0 o63      key=63  Quindío            estrato 2 Templado  huella=   787.9 kg
+[   150] p1 o61      key=18  Caquetá            estrato 1 Cálido    huella=  1440.6 kg
+[   151] p2 o24      key=85  Casanare           estrato 1 Cálido    huella=   313.9 kg
+[   152] p0 o64      key=25  Cundinamarca       estrato 2 Frío      huella=  1182.0 kg
+[   153] p0 o65      key=27  Chocó              estrato 1 Cálido    huella=   245.6 kg
+[   154] p0 o66      key=23  Córdoba            estrato 1 Cálido    huella=   183.7 kg
+[   155] p0 o67      key=88  San Andrés, Provid estrato 2 Cálido    huella=   960.3 kg
+[   156] p2 o25      key=73  Tolima             estrato 1 Templado  huella=  1212.2 kg
+[   157] p0 o68      key=15  Boyacá             estrato 1 Frío      huella=   541.7 kg
+[   158] p0 o69      key=23  Córdoba            estrato 2 Cálido    huella=  1482.8 kg
+[   159] p0 o70      key=70  Sucre              estrato 1 Cálido    huella=   309.4 kg
+[   160] p1 o62      key=94  Guainía            estrato 0 Cálido    huella=    86.1 kg
+[   161] p0 o71      key=70  Sucre              estrato 1 Cálido    huella=   567.7 kg
+[   162] p0 o72      key=76  Valle del Cauca    estrato 1 Templado  huella=   615.9 kg
+[   163] p2 o26      key=41  Huila              estrato 1 Templado  huella=    57.4 kg
+[   164] p0 o73      key=5   Antioquia          estrato 0 Templado  huella=    57.4 kg
+[   165] p0 o74      key=11  Bogotá D.C.        estrato 2 Frío      huella=   491.5 kg
+[   166] p0 o83      key=52  Nariño             estrato 0 Frío      huella=   114.8 kg
+[   167] p0 o84      key=11  Bogotá D.C.        estrato 1 Frío      huella=  1234.0 kg
+[   168] p0 o85      key=8   Atlántico          estrato 1 Cálido    huella=   855.8 kg
+[   169] p0 o86      key=8   Atlántico          estrato 1 Cálido    huella=  2146.1 kg
+[   170] p0 o87      key=11  Bogotá D.C.        estrato 2 Frío      huella=   973.4 kg
+[   171] p1 o63      key=86  Putumayo           estrato 0 Templado  huella=  1345.9 kg
+[   172] p1 o64      key=20  Cesar              estrato 0 Cálido    huella=   114.8 kg
+[   173] p2 o27      key=85  Casanare           estrato 2 Cálido    huella=  1428.0 kg
+[   174] p0 o88      key=15  Boyacá             estrato 2 Frío      huella=   129.7 kg
+[   175] p0 o89      key=17  Caldas             estrato 3 Frío      huella=  1662.8 kg
+[   176] p0 o90      key=11  Bogotá D.C.        estrato 0 Frío      huella=  1345.9 kg
+[   177] p1 o65      key=19  Cauca              estrato 1 Templado  huella=  1329.3 kg
+[   178] p0 o91      key=47  Magdalena          estrato 1 Cálido    huella=  1980.1 kg
+[   179] p0 o92      key=27  Chocó              estrato 1 Cálido    huella=  1297.7 kg
+[   180] p0 o93      key=25  Cundinamarca       estrato 2 Frío      huella=   695.3 kg
+[   181] p0 o94      key=15  Boyacá             estrato 2 Frío      huella=   463.6 kg
+[   182] p2 o28      key=50  Meta               estrato 4 Cálido    huella=  1110.3 kg
+[   183] p1 o66      key=68  Santander          estrato 4 Templado  huella=  1154.8 kg
+[   184] p0 o95      key=52  Nariño             estrato 1 Frío      huella=   676.4 kg
+[   185] p0 o96      key=76  Valle del Cauca    estrato 1 Templado  huella=  1549.7 kg
+[   186] p2 o29      key=41  Huila              estrato 1 Templado  huella=   526.9 kg
+[   187] p0 o97      key=17  Caldas             estrato 3 Frío      huella=   782.4 kg
+[   188] p0 o98      key=17  Caldas             estrato 1 Frío      huella=   522.5 kg
+[   189] p0 o99      key=44  La Guajira         estrato 0 Cálido    huella=   114.8 kg
+[   190] p2 o30      key=85  Casanare           estrato 3 Cálido    huella=   620.0 kg
+[   191] p0 o100     key=52  Nariño             estrato 2 Frío      huella=  1984.1 kg
+[   192] p1 o67      key=81  Arauca             estrato 1 Frío      huella=   869.6 kg
+[   193] p0 o101     key=27  Chocó              estrato 1 Cálido    huella=  1452.1 kg
+[   194] p1 o68      key=94  Guainía            estrato 1 Cálido    huella=   573.9 kg
+[   195] p2 o31      key=85  Casanare           estrato 1 Cálido    huella=   432.0 kg
+[   196] p0 o102     key=15  Boyacá             estrato 2 Frío      huella=  1638.4 kg
+[   197] p0 o103     key=54  Norte de Santander estrato 2 Templado  huella=   441.9 kg
+[   198] p1 o69      key=68  Santander          estrato 2 Templado  huella=  1005.4 kg
+[   199] p2 o32      key=73  Tolima             estrato 2 Templado  huella=  1327.7 kg
+[   200] p0 o104     key=23  Córdoba            estrato 1 Cálido    huella=   245.6 kg
+[   201] p0 o105     key=99  Vichada            estrato 0 Cálido    huella=   114.8 kg
+[   202] p1 o70      key=13  Bolívar            estrato 1 Cálido    huella=  1111.3 kg
+[   203] p0 o106     key=54  Norte de Santander estrato 2 Templado  huella=   537.7 kg
+[   204] p2 o33      key=41  Huila              estrato 1 Templado  huella=  1259.3 kg
+[   205] p0 o107     key=27  Chocó              estrato 1 Cálido    huella=  1236.9 kg
+[   206] p0 o108     key=52  Nariño             estrato 1 Frío      huella=  1476.8 kg
+[   207] p1 o71      key=86  Putumayo           estrato 1 Templado  huella=   792.1 kg
+[   208] p0 o109     key=52  Nariño             estrato 1 Frío      huella=   666.1 kg
+[   209] p0 o110     key=76  Valle del Cauca    estrato 4 Templado  huella=   862.5 kg
+[   210] p0 o111     key=5   Antioquia          estrato 2 Templado  huella=  2188.4 kg
+[   211] p0 o112     key=54  Norte de Santander estrato 2 Templado  huella=   277.9 kg
+[   212] p0 o113     key=5   Antioquia          estrato 1 Templado  huella=  1861.0 kg
+[   213] p1 o72      key=94  Guainía            estrato 2 Cálido    huella=  1565.4 kg
+[   214] p0 o114     key=5   Antioquia          estrato 2 Templado  huella=  2120.8 kg
+[   215] p1 o73      key=19  Cauca              estrato 1 Templado  huella=   524.4 kg
+[   216] p1 o74      key=66  Risaralda          estrato 3 Templado  huella=   898.0 kg
+[   217] p2 o34      key=73  Tolima             estrato 1 Templado  huella=  1290.0 kg
+[   218] p2 o35      key=91  Amazonas           estrato 2 Cálido    huella=  2163.2 kg
+[   219] p2 o36      key=41  Huila              estrato 1 Templado  huella=   702.3 kg
+[   220] p0 o115     key=5   Antioquia          estrato 2 Templado  huella=  1309.6 kg
+[   221] p1 o75      key=66  Risaralda          estrato 1 Templado  huella=  1252.9 kg
+[   222] p0 o116     key=99  Vichada            estrato 2 Cálido    huella=   809.7 kg
+[   223] p2 o37      key=91  Amazonas           estrato 3 Cálido    huella=  2039.1 kg
+[   224] p0 o117     key=23  Córdoba            estrato 6 Cálido    huella=  1442.4 kg
+[   225] p1 o76      key=20  Cesar              estrato 0 Cálido    huella=   114.8 kg
+[   226] p1 o77      key=13  Bolívar            estrato 0 Cálido    huella=  1435.5 kg
+[   227] p1 o78      key=19  Cauca              estrato 1 Templado  huella=  1476.8 kg
+[   228] p0 o118     key=47  Magdalena          estrato 1 Cálido    huella=   979.4 kg
+[   229] p2 o38      key=73  Tolima             estrato 1 Templado  huella=   397.2 kg
+[   230] p1 o79      key=13  Bolívar            estrato 1 Cálido    huella=   930.4 kg
+[   231] p0 o119     key=44  La Guajira         estrato 1 Cálido    huella=  1163.2 kg
+[   232] p2 o39      key=73  Tolima             estrato 1 Templado  huella=  1074.7 kg
+[   233] p1 o80      key=66  Risaralda          estrato 2 Templado  huella=  1272.1 kg
+[   234] p0 o120     key=17  Caldas             estrato 2 Frío      huella=   848.3 kg
+[   235] p0 o121     key=25  Cundinamarca       estrato 2 Frío      huella=   138.9 kg
+[   236] p2 o40      key=50  Meta               estrato 3 Cálido    huella=   193.0 kg
+[   237] p0 o122     key=63  Quindío            estrato 2 Templado  huella=  1285.2 kg
+[   238] p0 o123     key=54  Norte de Santander estrato 2 Templado  huella=   629.1 kg
+[   239] p2 o41      key=85  Casanare           estrato 1 Cálido    huella=   245.6 kg
+[   240] p0 o124     key=54  Norte de Santander estrato 0 Templado  huella=   114.8 kg
+[   241] p1 o81      key=86  Putumayo           estrato 1 Templado  huella=   245.6 kg
+[   242] p1 o82      key=68  Santander          estrato 3 Templado  huella=   246.2 kg
+[   243] p0 o125     key=5   Antioquia          estrato 1 Templado  huella=  1191.3 kg
+[   244] p1 o83      key=94  Guainía            estrato 0 Cálido    huella=    57.4 kg
+[   245] p0 o126     key=5   Antioquia          estrato 1 Templado  huella=  1509.5 kg
+[   246] p1 o84      key=68  Santander          estrato 1 Templado  huella=   137.7 kg
+[   247] p0 o127     key=76  Valle del Cauca    estrato 5 Templado  huella=   821.2 kg
+[   248] p1 o85      key=20  Cesar              estrato 2 Cálido    huella=   551.3 kg
+[   249] p0 o128     key=8   Atlántico          estrato 4 Cálido    huella=  1613.9 kg
+[   250] p0 o129     key=99  Vichada            estrato 0 Cálido    huella=   114.8 kg
+[   251] p2 o42      key=73  Tolima             estrato 2 Templado  huella=  1187.0 kg
+[   252] p2 o43      key=85  Casanare           estrato 1 Cálido    huella=   824.7 kg
+[   253] p0 o130     key=52  Nariño             estrato 1 Frío      huella=   114.8 kg
+[   254] p0 o131     key=99  Vichada            estrato 2 Cálido    huella=  1509.0 kg
+[   255] p1 o86      key=94  Guainía            estrato 0 Cálido    huella=   114.8 kg
+[   256] p1 o87      key=20  Cesar              estrato 1 Cálido    huella=   605.5 kg
+[   257] p2 o44      key=97  Vaupés             estrato 0 Sin clima huella=   114.8 kg
+[   258] p0 o132     key=8   Atlántico          estrato 1 Cálido    huella=   732.6 kg
+[   259] p1 o88      key=20  Cesar              estrato 3 Cálido    huella=  1575.6 kg
+[   260] p0 o133     key=70  Sucre              estrato 1 Cálido    huella=   714.8 kg
+[   261] p1 o89      key=68  Santander          estrato 2 Templado  huella=   333.7 kg
+[   262] p0 o134     key=52  Nariño             estrato 3 Frío      huella=   797.3 kg
+[   263] p0 o135     key=70  Sucre              estrato 3 Cálido    huella=  1339.1 kg
+[   264] p0 o136     key=15  Boyacá             estrato 2 Frío      huella=   123.5 kg
+[   265] p1 o90      key=86  Putumayo           estrato 1 Templado  huella=  1469.3 kg
+[   266] p0 o137     key=63  Quindío            estrato 2 Templado  huella=   861.2 kg
+[   267] p0 o138     key=47  Magdalena          estrato 1 Cálido    huella=   440.4 kg
+[   268] p0 o139     key=54  Norte de Santander estrato 2 Templado  huella=  1244.3 kg
+[   269] p1 o91      key=86  Putumayo           estrato 1 Templado  huella=   788.1 kg
+[   270] p1 o92      key=94  Guainía            estrato 0 Cálido    huella=   114.8 kg
+[   271] p0 o140     key=70  Sucre              estrato 1 Cálido    huella=   245.6 kg
+[   272] p0 o141     key=23  Córdoba            estrato 1 Cálido    huella=   474.1 kg
+[   273] p1 o93      key=81  Arauca             estrato 1 Frío      huella=  1202.2 kg
+[   274] p0 o142     key=17  Caldas             estrato 2 Frío      huella=   798.8 kg
+[   275] p2 o45      key=91  Amazonas           estrato 3 Cálido    huella=  1665.8 kg
+[   276] p0 o143     key=54  Norte de Santander estrato 2 Templado  huella=   867.1 kg
+[   277] p0 o144     key=70  Sucre              estrato 0 Cálido    huella=   114.8 kg
+[   278] p0 o145     key=25  Cundinamarca       estrato 2 Frío      huella=  1312.1 kg
+[   279] p0 o146     key=5   Antioquia          estrato 1 Templado  huella=   566.8 kg
+[   280] p0 o147     key=54  Norte de Santander estrato 2 Templado  huella=   947.2 kg
+[   281] p2 o46      key=97  Vaupés             estrato 1 Sin clima huella=    51.7 kg
+[   282] p0 o148     key=44  La Guajira         estrato 0 Cálido    huella=   114.8 kg
+[   283] p0 o149     key=99  Vichada            estrato 0 Cálido    huella=   114.8 kg
+[   284] p2 o47      key=85  Casanare           estrato 0 Cálido    huella=  1178.1 kg
+[   285] p2 o48      key=41  Huila              estrato 2 Templado  huella=  1359.4 kg
+[   286] p0 o150     key=11  Bogotá D.C.        estrato 1 Frío      huella=  1403.3 kg
+[   287] p0 o151     key=54  Norte de Santander estrato 2 Templado  huella=  1713.6 kg
+[   288] p1 o94      key=19  Cauca              estrato 2 Templado  huella=   690.4 kg
+[   289] p1 o95      key=13  Bolívar            estrato 1 Cálido    huella=  1629.5 kg
+[   290] p1 o96      key=66  Risaralda          estrato 1 Templado  huella=   275.5 kg
+[   291] p1 o97      key=86  Putumayo           estrato 1 Templado  huella=   717.2 kg
+[   292] p0 o152     key=25  Cundinamarca       estrato 2 Frío      huella=   509.9 kg
+[   293] p0 o153     key=5   Antioquia          estrato 3 Templado  huella=  1963.1 kg
+[   294] p1 o98      key=66  Risaralda          estrato 2 Templado  huella=   250.2 kg
+[   295] p1 o99      key=19  Cauca              estrato 2 Templado  huella=   936.9 kg
+[   296] p0 o154     key=25  Cundinamarca       estrato 3 Frío      huella=   783.2 kg
+[   297] p0 o155     key=76  Valle del Cauca    estrato 3 Templado  huella=   724.1 kg
+[   298] p0 o156     key=63  Quindío            estrato 2 Templado  huella=   324.2 kg
+[   299] p0 o157     key=76  Valle del Cauca    estrato 1 Templado  huella=  1635.8 kg
+[   300] p0 o158     key=76  Valle del Cauca    estrato 1 Templado  huella=   608.3 kg
+[   301] p0 o159     key=70  Sucre              estrato 1 Cálido    huella=   205.5 kg
+[   302] p2 o49      key=50  Meta               estrato 1 Cálido    huella=  1331.3 kg
+[   303] p2 o50      key=73  Tolima             estrato 3 Templado  huella=   436.1 kg
+[   304] p0 o160     key=25  Cundinamarca       estrato 2 Frío      huella=  1313.8 kg
+[   305] p0 o161     key=25  Cundinamarca       estrato 3 Frío      huella=   836.0 kg
+[   306] p1 o100     key=66  Risaralda          estrato 6 Templado  huella=   669.6 kg
+[   307] p0 o162     key=15  Boyacá             estrato 2 Frío      huella=    92.6 kg
+[   308] p1 o101     key=18  Caquetá            estrato 1 Cálido    huella=   668.7 kg
+[   309] p0 o163     key=88  San Andrés, Provid estrato 1 Cálido    huella=  1495.1 kg
+[   310] p0 o164     key=47  Magdalena          estrato 4 Cálido    huella=   876.5 kg
+[   311] p2 o51      key=73  Tolima             estrato 2 Templado  huella=   277.9 kg
+[   312] p0 o165     key=17  Caldas             estrato 1 Frío      huella=   245.6 kg
+[   313] p1 o102     key=19  Cauca              estrato 2 Templado  huella=  1307.3 kg
+[   314] p2 o52      key=97  Vaupés             estrato 1 Sin clima huella=  1525.3 kg
+[   315] p0 o166     key=44  La Guajira         estrato 2 Cálido    huella=   828.7 kg
+[   316] p0 o167     key=8   Atlántico          estrato 1 Cálido    huella=   731.0 kg
+[   317] p0 o168     key=25  Cundinamarca       estrato 2 Frío      huella=  1066.2 kg
+[   318] p1 o103     key=95  Guaviare           estrato 1 Cálido    huella=  1462.2 kg
+[   319] p1 o104     key=94  Guainía            estrato 1 Cálido    huella=  1521.0 kg
+[   320] p2 o53      key=97  Vaupés             estrato 0 Sin clima huella=   114.8 kg
+[   321] p0 o169     key=63  Quindío            estrato 3 Templado  huella=   602.5 kg
+[   322] p0 o170     key=15  Boyacá             estrato 2 Frío      huella=   142.0 kg
+[   323] p1 o105     key=20  Cesar              estrato 1 Cálido    huella=   213.0 kg
+[   324] p0 o171     key=5   Antioquia          estrato 2 Templado  huella=  2412.2 kg
+[   325] p0 o172     key=25  Cundinamarca       estrato 1 Frío      huella=   411.1 kg
+[   326] p0 o173     key=52  Nariño             estrato 0 Frío      huella=   506.5 kg
+[   327] p1 o106     key=19  Cauca              estrato 1 Templado  huella=  1357.4 kg
+[   328] p0 o174     key=15  Boyacá             estrato 2 Frío      huella=    69.5 kg
+[   329] p1 o107     key=68  Santander          estrato 4 Templado  huella=   548.5 kg
+[   330] p0 o175     key=70  Sucre              estrato 1 Cálido    huella=   454.3 kg
+[   331] p1 o108     key=18  Caquetá            estrato 2 Cálido    huella=  1359.7 kg
+[   332] p1 o109     key=81  Arauca             estrato 1 Frío      huella=  1963.5 kg
+[   333] p0 o176     key=11  Bogotá D.C.        estrato 2 Frío      huella=   398.5 kg
+[   334] p0 o177     key=70  Sucre              estrato 1 Cálido    huella=   611.8 kg
+[   335] p0 o178     key=5   Antioquia          estrato 1 Templado  huella=  1322.0 kg
+[   336] p1 o110     key=20  Cesar              estrato 3 Cálido    huella=  1233.9 kg
+[   337] p0 o179     key=17  Caldas             estrato 1 Frío      huella=    51.7 kg
+[   338] p0 o180     key=54  Norte de Santander estrato 2 Templado  huella=   695.3 kg
+[   339] p0 o181     key=70  Sucre              estrato 1 Cálido    huella=   443.1 kg
+[   340] p0 o182     key=8   Atlántico          estrato 1 Cálido    huella=   245.6 kg
+[   341] p0 o183     key=52  Nariño             estrato 1 Frío      huella=   737.2 kg
+[   342] p2 o54      key=73  Tolima             estrato 1 Templado  huella=   716.5 kg
+[   343] p2 o55      key=91  Amazonas           estrato 1 Cálido    huella=  1776.4 kg
+[   344] p1 o111     key=19  Cauca              estrato 1 Templado  huella=   258.3 kg
+[   345] p0 o184     key=5   Antioquia          estrato 1 Templado  huella=   792.0 kg
+[   346] p2 o56      key=73  Tolima             estrato 2 Templado  huella=   658.3 kg
+[   347] p0 o185     key=76  Valle del Cauca    estrato 1 Templado  huella=  1588.7 kg
+[   348] p2 o57      key=41  Huila              estrato 1 Templado  huella=   264.0 kg
+[   349] p2 o58      key=50  Meta               estrato 3 Cálido    huella=   614.5 kg
+[   350] p1 o112     key=86  Putumayo           estrato 0 Templado  huella=   114.8 kg
+[   351] p1 o113     key=66  Risaralda          estrato 3 Templado  huella=   266.7 kg
+[   352] p0 o186     key=8   Atlántico          estrato 2 Cálido    huella=   634.9 kg
+[   353] p0 o187     key=27  Chocó              estrato 1 Cálido    huella=  1592.7 kg
+[   354] p1 o114     key=13  Bolívar            estrato 1 Cálido    huella=   245.6 kg
+[   355] p0 o188     key=17  Caldas             estrato 1 Frío      huella=   881.0 kg
+[   356] p0 o189     key=15  Boyacá             estrato 2 Frío      huella=   108.1 kg
+[   357] p2 o59      key=97  Vaupés             estrato 1 Sin clima huella=    45.9 kg
+[   358] p2 o60      key=41  Huila              estrato 1 Templado  huella=   644.3 kg
+[   359] p2 o61      key=73  Tolima             estrato 1 Templado  huella=   977.7 kg
+[   360] p0 o190     key=52  Nariño             estrato 2 Frío      huella=   936.7 kg
+[   361] p2 o62      key=97  Vaupés             estrato 0 Sin clima huella=   114.8 kg
+[   362] p0 o191     key=52  Nariño             estrato 4 Frío      huella=  1236.7 kg
+[   363] p1 o115     key=94  Guainía            estrato 1 Cálido    huella=  1677.7 kg
+[   364] p0 o192     key=44  La Guajira         estrato 0 Cálido    huella=  1010.2 kg
+[   365] p1 o116     key=18  Caquetá            estrato 1 Cálido    huella=   745.2 kg
+[   366] p0 o193     key=76  Valle del Cauca    estrato 1 Templado  huella=  1588.7 kg
+[   367] p0 o194     key=8   Atlántico          estrato 1 Cálido    huella=   663.0 kg
+[   368] p0 o195     key=17  Caldas             estrato 4 Frío      huella=   291.9 kg
+[   369] p0 o196     key=63  Quindío            estrato 1 Templado  huella=   999.0 kg
+[   370] p0 o197     key=5   Antioquia          estrato 1 Templado  huella=  1690.3 kg
+[   371] p0 o198     key=44  La Guajira         estrato 1 Cálido    huella=   607.4 kg
+[   372] p0 o199     key=88  San Andrés, Provid estrato 2 Cálido    huella=  2188.4 kg
+[   373] p0 o200     key=47  Magdalena          estrato 0 Cálido    huella=   114.8 kg
+[   374] p0 o201     key=17  Caldas             estrato 1 Frío      huella=   855.7 kg
+[   375] p0 o202     key=63  Quindío            estrato 2 Templado  huella=  1305.4 kg
+[   376] p0 o203     key=47  Magdalena          estrato 2 Cálido    huella=   750.8 kg
+[   377] p0 o204     key=25  Cundinamarca       estrato 2 Frío      huella=  1347.0 kg
+[   378] p0 o205     key=25  Cundinamarca       estrato 2 Frío      huella=   654.2 kg
+[   379] p2 o63      key=50  Meta               estrato 1 Cálido    huella=   453.9 kg
+[   380] p1 o117     key=86  Putumayo           estrato 0 Templado  huella=   898.3 kg
+[   381] p1 o118     key=20  Cesar              estrato 0 Cálido    huella=   114.8 kg
+[   382] p1 o119     key=86  Putumayo           estrato 1 Templado  huella=  1096.3 kg
+[   383] p1 o120     key=20  Cesar              estrato 1 Cálido    huella=   961.3 kg
+[   384] p2 o64      key=85  Casanare           estrato 3 Cálido    huella=   580.6 kg
+[   385] p1 o121     key=18  Caquetá            estrato 1 Cálido    huella=   754.6 kg
+[   386] p2 o65      key=91  Amazonas           estrato 2 Cálido    huella=  1759.9 kg
+[   387] p0 o206     key=15  Boyacá             estrato 2 Frío      huella=   611.9 kg
+[   388] p0 o207     key=8   Atlántico          estrato 1 Cálido    huella=  1085.1 kg
+[   389] p0 o208     key=54  Norte de Santander estrato 2 Templado  huella=  1285.2 kg
+[   390] p0 o209     key=27  Chocó              estrato 0 Cálido    huella=    45.9 kg
+[   391] p0 o210     key=25  Cundinamarca       estrato 2 Frío      huella=   277.9 kg
+[   392] p1 o122     key=86  Putumayo           estrato 1 Templado  huella=   759.1 kg
+[   393] p0 o211     key=76  Valle del Cauca    estrato 2 Templado  huella=   481.8 kg
+[   394] p1 o123     key=81  Arauca             estrato 1 Frío      huella=  1110.0 kg
+[   395] p0 o212     key=63  Quindío            estrato 1 Templado  huella=  1548.2 kg
+[   396] p1 o124     key=81  Arauca             estrato 1 Frío      huella=   852.3 kg
+[   397] p0 o213     key=52  Nariño             estrato 0 Frío      huella=  1569.8 kg
+[   398] p1 o125     key=18  Caquetá            estrato 0 Cálido    huella=  1234.0 kg
+[   399] p0 o214     key=52  Nariño             estrato 1 Frío      huella=   433.9 kg
+[   400] p2 o66      key=85  Casanare           estrato 1 Cálido    huella=   308.5 kg
+[   401] p2 o67      key=91  Amazonas           estrato 2 Cálido    huella=   222.3 kg
+[   402] p0 o215     key=25  Cundinamarca       estrato 2 Frío      huella=   296.6 kg
+[   403] p0 o216     key=27  Chocó              estrato 1 Cálido    huella=  1521.0 kg
+[   404] p1 o126     key=13  Bolívar            estrato 1 Cálido    huella=   229.6 kg
+[   405] p0 o217     key=11  Bogotá D.C.        estrato 1 Frío      huella=   948.5 kg
+[   406] p0 o218     key=25  Cundinamarca       estrato 2 Frío      huella=   162.1 kg
+[   407] p2 o68      key=85  Casanare           estrato 2 Cálido    huella=   903.4 kg
+[   408] p2 o69      key=50  Meta               estrato 2 Cálido    huella=   231.6 kg
+[   409] p1 o127     key=20  Cesar              estrato 0 Cálido    huella=  1457.9 kg
+[   410] p0 o219     key=76  Valle del Cauca    estrato 1 Templado  huella=  1332.4 kg
+[   411] p2 o70      key=50  Meta               estrato 2 Cálido    huella=  1416.4 kg
+[   412] p1 o128     key=86  Putumayo           estrato 1 Templado  huella=   754.2 kg
+[   413] p1 o129     key=13  Bolívar            estrato 1 Cálido    huella=   778.2 kg
+[   414] p0 o220     key=25  Cundinamarca       estrato 2 Frío      huella=  1536.8 kg
+[   415] p0 o221     key=44  La Guajira         estrato 2 Cálido    huella=   778.7 kg
+[   416] p1 o130     key=20  Cesar              estrato 1 Cálido    huella=  1588.7 kg
+[   417] p1 o131     key=18  Caquetá            estrato 1 Cálido    huella=   503.7 kg
+[   418] p0 o222     key=8   Atlántico          estrato 1 Cálido    huella=   876.5 kg
+[   419] p0 o223     key=88  San Andrés, Provid estrato 2 Cálido    huella=  1154.0 kg
+[   420] p1 o132     key=19  Cauca              estrato 1 Templado  huella=   429.2 kg
+[   421] p2 o71      key=41  Huila              estrato 1 Templado  huella=   101.6 kg
+[   422] p2 o72      key=73  Tolima             estrato 4 Templado  huella=   577.4 kg
+[   423] p0 o224     key=15  Boyacá             estrato 2 Frío      huella=   417.2 kg
+[   424] p0 o225     key=11  Bogotá D.C.        estrato 2 Frío      huella=   672.2 kg
+[   425] p0 o226     key=54  Norte de Santander estrato 2 Templado  huella=   394.0 kg
+[   426] p0 o227     key=52  Nariño             estrato 1 Frío      huella=  1291.4 kg
+[   427] p1 o133     key=66  Risaralda          estrato 1 Templado  huella=   245.6 kg
+[   428] p0 o228     key=25  Cundinamarca       estrato 4 Frío      huella=   899.5 kg
+[   429] p1 o134     key=95  Guaviare           estrato 1 Cálido    huella=  1197.0 kg
+[   430] p0 o229     key=70  Sucre              estrato 1 Cálido    huella=   245.6 kg
+[   431] p0 o230     key=11  Bogotá D.C.        estrato 2 Frío      huella=   310.3 kg
+[   432] p1 o135     key=66  Risaralda          estrato 1 Templado  huella=   565.9 kg
+[   433] p1 o136     key=95  Guaviare           estrato 1 Cálido    huella=  1218.2 kg
+[   434] p1 o137     key=81  Arauca             estrato 1 Frío      huella=  1062.7 kg
+[   435] p0 o231     key=27  Chocó              estrato 0 Cálido    huella=  2092.0 kg
+[   436] p2 o73      key=91  Amazonas           estrato 1 Cálido    huella=  2008.7 kg
+[   437] p1 o138     key=95  Guaviare           estrato 1 Cálido    huella=  1396.1 kg
+[   438] p0 o232     key=76  Valle del Cauca    estrato 2 Templado  huella=   514.5 kg
+[   439] p1 o139     key=68  Santander          estrato 1 Templado  huella=  1020.2 kg
+[   440] p0 o233     key=25  Cundinamarca       estrato 3 Frío      huella=  1412.4 kg
+[   441] p0 o234     key=11  Bogotá D.C.        estrato 0 Frío      huella=  1345.9 kg
+[   442] p1 o140     key=19  Cauca              estrato 6 Templado  huella=  1230.8 kg
+[   443] p0 o235     key=47  Magdalena          estrato 1 Cálido    huella=  1364.9 kg
+[   444] p0 o236     key=8   Atlántico          estrato 1 Cálido    huella=   895.8 kg
+[   445] p1 o141     key=18  Caquetá            estrato 2 Cálido    huella=   561.0 kg
+[   446] p1 o142     key=66  Risaralda          estrato 0 Templado  huella=   463.5 kg
+[   447] p0 o237     key=15  Boyacá             estrato 2 Frío      huella=     7.7 kg
+[   448] p0 o238     key=27  Chocó              estrato 0 Cálido    huella=   287.0 kg
+[   449] p0 o239     key=27  Chocó              estrato 0 Cálido    huella=   114.8 kg
+[   450] p2 o74      key=73  Tolima             estrato 2 Templado  huella=  1322.3 kg
+[   451] p2 o75      key=73  Tolima             estrato 0 Templado  huella=   114.8 kg
+[   452] p2 o76      key=97  Vaupés             estrato 0 Sin clima huella=   114.8 kg
+[   453] p1 o143     key=13  Bolívar            estrato 2 Cálido    huella=  1283.3 kg
+[   454] p0 o240     key=5   Antioquia          estrato 1 Templado  huella=  1345.9 kg
+[   455] p2 o77      key=85  Casanare           estrato 1 Cálido    huella=   535.7 kg
+[   456] p0 o241     key=63  Quindío            estrato 1 Templado  huella=   572.5 kg
+[   457] p2 o78      key=85  Casanare           estrato 1 Cálido    huella=   470.3 kg
+[   458] p2 o79      key=73  Tolima             estrato 1 Templado  huella=   811.5 kg
+[   459] p0 o242     key=27  Chocó              estrato 0 Cálido    huella=   114.8 kg
+[   460] p2 o80      key=85  Casanare           estrato 0 Cálido    huella=  1234.0 kg
+[   461] p0 o243     key=5   Antioquia          estrato 3 Templado  huella=  1145.9 kg
+[   462] p0 o244     key=27  Chocó              estrato 1 Cálido    huella=   241.0 kg
+[   463] p2 o81      key=91  Amazonas           estrato 0 Cálido    huella=   860.9 kg
+[   464] p1 o144     key=86  Putumayo           estrato 2 Templado  huella=   707.8 kg
+[   465] p1 o145     key=20  Cesar              estrato 2 Cálido    huella=  1048.8 kg
+[   466] p0 o245     key=44  La Guajira         estrato 2 Cálido    huella=   889.7 kg
+[   467] p0 o246     key=23  Córdoba            estrato 1 Cálido    huella=   245.6 kg
+[   468] p2 o82      key=97  Vaupés             estrato 1 Sin clima huella=   245.6 kg
+[   469] p2 o83      key=73  Tolima             estrato 2 Templado  huella=   457.6 kg
+[   470] p0 o247     key=23  Córdoba            estrato 1 Cálido    huella=   344.3 kg
+[   471] p1 o146     key=86  Putumayo           estrato 1 Templado  huella=   805.2 kg
+[   472] p2 o84      key=85  Casanare           estrato 0 Cálido    huella=   476.5 kg
+[   473] p2 o85      key=85  Casanare           estrato 1 Cálido    huella=   245.6 kg
+[   474] p0 o248     key=15  Boyacá             estrato 2 Frío      huella=   463.3 kg
+[   475] p0 o249     key=8   Atlántico          estrato 1 Cálido    huella=   392.1 kg
+[   476] p0 o250     key=17  Caldas             estrato 2 Frío      huella=   231.6 kg
+[   477] p1 o147     key=86  Putumayo           estrato 0 Templado  huella=  1211.6 kg
+[   478] p0 o251     key=8   Atlántico          estrato 0 Cálido    huella=   114.8 kg
+[   479] p1 o148     key=18  Caquetá            estrato 1 Cálido    huella=   668.2 kg
+[   480] p1 o149     key=19  Cauca              estrato 1 Templado  huella=  1747.7 kg
+[   481] p1 o150     key=19  Cauca              estrato 2 Templado  huella=   315.2 kg
+[   482] p0 o252     key=5   Antioquia          estrato 2 Templado  huella=  1120.9 kg
+[   483] p1 o151     key=68  Santander          estrato 1 Templado  huella=   143.5 kg
+[   484] p0 o253     key=23  Córdoba            estrato 1 Cálido    huella=  1155.7 kg
+[   485] p0 o254     key=25  Cundinamarca       estrato 2 Frío      huella=   115.8 kg
+[   486] p2 o86      key=50  Meta               estrato 1 Cálido    huella=   691.3 kg
+[   487] p0 o255     key=52  Nariño             estrato 1 Frío      huella=   640.0 kg
+[   488] p1 o152     key=81  Arauca             estrato 1 Frío      huella=   954.2 kg
+[   489] p1 o153     key=20  Cesar              estrato 1 Cálido    huella=   718.7 kg
+[   490] p1 o154     key=19  Cauca              estrato 1 Templado  huella=   542.6 kg
+[   491] p0 o256     key=76  Valle del Cauca    estrato 1 Templado  huella=   842.6 kg
+[   492] p0 o257     key=15  Boyacá             estrato 2 Frío      huella=   141.6 kg
+[   493] p2 o87      key=50  Meta               estrato 2 Cálido    huella=   472.6 kg
+[   494] p0 o258     key=11  Bogotá D.C.        estrato 1 Frío      huella=  1176.6 kg
+[   495] p1 o155     key=19  Cauca              estrato 2 Templado  huella=   277.9 kg
+[   496] p2 o88      key=85  Casanare           estrato 1 Cálido    huella=   587.8 kg
+[   497] p1 o156     key=94  Guainía            estrato 2 Cálido    huella=  2524.2 kg
+[   498] p0 o259     key=76  Valle del Cauca    estrato 0 Templado  huella=    86.1 kg
+[   499] p0 o260     key=63  Quindío            estrato 1 Templado  huella=  1039.0 kg
+[   500] p0 o261     key=54  Norte de Santander estrato 2 Templado  huella=  1112.3 kg
+[   501] p0 o262     key=25  Cundinamarca       estrato 2 Frío      huella=  1370.1 kg
+[   502] p0 o263     key=54  Norte de Santander estrato 2 Templado  huella=  1603.7 kg
+[   503] p1 o157     key=81  Arauca             estrato 1 Frío      huella=  1094.8 kg
+[   504] p0 o264     key=63  Quindío            estrato 1 Templado  huella=  1372.3 kg
+[   505] p2 o89      key=50  Meta               estrato 1 Cálido    huella=   332.9 kg
+[   506] p2 o90      key=73  Tolima             estrato 2 Templado  huella=   904.1 kg
+[   507] p0 o265     key=44  La Guajira         estrato 1 Cálido    huella=  2130.4 kg
+[   508] p0 o266     key=99  Vichada            estrato 1 Cálido    huella=   573.9 kg
+[   509] p0 o267     key=8   Atlántico          estrato 1 Cálido    huella=   704.7 kg
+[   510] p1 o158     key=19  Cauca              estrato 1 Templado  huella=   480.7 kg
+[   511] p1 o159     key=95  Guaviare           estrato 2 Cálido    huella=  1104.6 kg
+[   512] p0 o268     key=8   Atlántico          estrato 2 Cálido    huella=  1341.2 kg
+[   513] p0 o269     key=8   Atlántico          estrato 1 Cálido    huella=   551.7 kg
+[   514] p1 o160     key=94  Guainía            estrato 0 Cálido    huella=   114.8 kg
+[   515] p2 o91      key=50  Meta               estrato 2 Cálido    huella=   658.9 kg
+[   516] p1 o161     key=81  Arauca             estrato 1 Frío      huella=   143.5 kg
+[   517] p2 o92      key=50  Meta               estrato 1 Cálido    huella=  1278.8 kg
+[   518] p1 o162     key=68  Santander          estrato 1 Templado  huella=   769.4 kg
+[   519] p1 o163     key=19  Cauca              estrato 1 Templado  huella=  1088.7 kg
+[   520] p1 o164     key=13  Bolívar            estrato 1 Cálido    huella=  1147.7 kg
+[   521] p0 o270     key=52  Nariño             estrato 1 Frío      huella=   997.6 kg
+[   522] p2 o93      key=50  Meta               estrato 2 Cálido    huella=  1275.5 kg
+[   523] p1 o165     key=66  Risaralda          estrato 4 Templado  huella=   924.6 kg
+[   524] p1 o166     key=95  Guaviare           estrato 1 Cálido    huella=  1325.8 kg
+[   525] p1 o167     key=13  Bolívar            estrato 2 Cálido    huella=   973.2 kg
+[   526] p0 o271     key=17  Caldas             estrato 2 Frío      huella=   973.4 kg
+[   527] p2 o94      key=91  Amazonas           estrato 3 Cálido    huella=  1665.8 kg
+[   528] p1 o168     key=20  Cesar              estrato 0 Cálido    huella=   114.8 kg
+[   529] p0 o272     key=47  Magdalena          estrato 1 Cálido    huella=   287.0 kg
+[   530] p0 o273     key=8   Atlántico          estrato 2 Cálido    huella=   764.5 kg
+[   531] p1 o169     key=68  Santander          estrato 1 Templado  huella=    86.1 kg
+[   532] p2 o95      key=41  Huila              estrato 1 Templado  huella=    63.1 kg
+[   533] p0 o274     key=54  Norte de Santander estrato 1 Templado  huella=  1056.5 kg
+[   534] p0 o275     key=70  Sucre              estrato 1 Cálido    huella=   183.7 kg
+[   535] p0 o276     key=44  La Guajira         estrato 3 Cálido    huella=   823.2 kg
+[   536] p2 o96      key=97  Vaupés             estrato 0 Sin clima huella=   114.8 kg
+[   537] p1 o170     key=95  Guaviare           estrato 1 Cálido    huella=   245.6 kg
+[   538] p0 o277     key=23  Córdoba            estrato 1 Cálido    huella=  1454.4 kg
+[   539] p0 o278     key=47  Magdalena          estrato 1 Cálido    huella=   245.6 kg
+[   540] p0 o279     key=63  Quindío            estrato 3 Templado  huella=   272.5 kg
+[   541] p0 o280     key=25  Cundinamarca       estrato 1 Frío      huella=   959.9 kg
+[   542] p1 o171     key=95  Guaviare           estrato 1 Cálido    huella=   531.6 kg
+[   543] p0 o281     key=44  La Guajira         estrato 0 Cálido    huella=   114.8 kg
+[   544] p0 o282     key=25  Cundinamarca       estrato 2 Frío      huella=  1956.7 kg
+[   545] p0 o283     key=63  Quindío            estrato 2 Templado  huella=   667.4 kg
+[   546] p1 o172     key=81  Arauca             estrato 1 Frío      huella=   987.8 kg
+[   547] p2 o97      key=41  Huila              estrato 2 Templado  huella=  1173.3 kg
+[   548] p0 o284     key=15  Boyacá             estrato 3 Frío      huella=  1533.4 kg
+[   549] p1 o173     key=81  Arauca             estrato 1 Frío      huella=  1290.2 kg
+[   550] p2 o98      key=50  Meta               estrato 4 Cálido    huella=   728.0 kg
+[   551] p1 o174     key=18  Caquetá            estrato 3 Cálido    huella=  1267.4 kg
+[   552] p0 o285     key=23  Córdoba            estrato 1 Cálido    huella=   614.6 kg
+[   553] p0 o286     key=44  La Guajira         estrato 1 Cálido    huella=   453.9 kg
+[   554] p2 o99      key=50  Meta               estrato 1 Cálido    huella=    28.7 kg
+[   555] p0 o287     key=70  Sucre              estrato 3 Cálido    huella=   958.1 kg
+[   556] p0 o288     key=52  Nariño             estrato 1 Frío      huella=  1038.9 kg
+[   557] p1 o175     key=66  Risaralda          estrato 2 Templado  huella=   996.5 kg
+[   558] p0 o289     key=23  Córdoba            estrato 1 Cálido    huella=  2141.9 kg
+[   559] p0 o290     key=23  Córdoba            estrato 2 Cálido    huella=  1278.9 kg
+[   560] p0 o291     key=52  Nariño             estrato 1 Frío      huella=   690.2 kg
+[   561] p2 o100     key=91  Amazonas           estrato 2 Cálido    huella=  1556.9 kg
+[   562] p1 o176     key=81  Arauca             estrato 1 Frío      huella=  1069.0 kg
+[   563] p2 o101     key=85  Casanare           estrato 2 Cálido    huella=  1068.3 kg
+[   564] p0 o292     key=47  Magdalena          estrato 2 Cálido    huella=  1728.2 kg
+[   565] p0 o293     key=54  Norte de Santander estrato 3 Templado  huella=   498.1 kg
+[   566] p0 o294     key=17  Caldas             estrato 3 Frío      huella=   715.3 kg
+[   567] p1 o177     key=20  Cesar              estrato 0 Cálido    huella=   114.8 kg
+[   568] p0 o295     key=47  Magdalena          estrato 1 Cálido    huella=   505.2 kg
+[   569] p1 o178     key=94  Guainía            estrato 0 Cálido    huella=   114.8 kg
+[   570] p2 o102     key=73  Tolima             estrato 1 Templado  huella=  1245.2 kg
+[   571] p0 o296     key=63  Quindío            estrato 3 Templado  huella=  1488.1 kg
+[   572] p2 o103     key=50  Meta               estrato 2 Cálido    huella=   579.2 kg
+[   573] p0 o297     key=99  Vichada            estrato 0 Cálido    huella=   114.8 kg
+[   574] p0 o298     key=99  Vichada            estrato 0 Cálido    huella=   114.8 kg
+[   575] p0 o299     key=23  Córdoba            estrato 1 Cálido    huella=  1605.2 kg
+[   576] p1 o179     key=86  Putumayo           estrato 2 Templado  huella=   277.9 kg
+[   577] p0 o300     key=17  Caldas             estrato 2 Frío      huella=    70.1 kg
+[   578] p1 o180     key=81  Arauca             estrato 1 Frío      huella=  1051.5 kg
+[   579] p1 o181     key=20  Cesar              estrato 0 Cálido    huella=  2834.8 kg
+[   580] p2 o104     key=50  Meta               estrato 1 Cálido    huella=  1320.1 kg
+[   581] p1 o182     key=86  Putumayo           estrato 1 Templado  huella=   731.8 kg
+[   582] p0 o301     key=25  Cundinamarca       estrato 2 Frío      huella=   319.7 kg
+[   583] p1 o183     key=94  Guainía            estrato 2 Cálido    huella=  2605.2 kg
+[   584] p1 o184     key=68  Santander          estrato 1 Templado  huella=   769.2 kg
+[   585] p0 o302     key=15  Boyacá             estrato 2 Frío      huella=   509.9 kg
+[   586] p2 o105     key=91  Amazonas           estrato 0 Cálido    huella=   114.8 kg
+[   587] p2 o106     key=50  Meta               estrato 3 Cálido    huella=   966.3 kg
+[   588] p1 o185     key=13  Bolívar            estrato 2 Cálido    huella=  1413.3 kg
+[   589] p0 o303     key=76  Valle del Cauca    estrato 2 Templado  huella=   500.5 kg
+[   590] p0 o304     key=76  Valle del Cauca    estrato 1 Templado  huella=   265.8 kg
+[   591] p0 o305     key=11  Bogotá D.C.        estrato 4 Frío      huella=  1142.7 kg
+[   592] p1 o186     key=68  Santander          estrato 0 Templado  huella=  1269.7 kg
+[   593] p0 o306     key=63  Quindío            estrato 1 Templado  huella=   318.8 kg
+[   594] p0 o307     key=17  Caldas             estrato 3 Frío      huella=   381.0 kg
+[   595] p1 o187     key=19  Cauca              estrato 1 Templado  huella=   223.8 kg
+[   596] p1 o188     key=20  Cesar              estrato 3 Cálido    huella=  1645.2 kg
+[   597] p2 o107     key=91  Amazonas           estrato 2 Cálido    huella=  1547.6 kg
+[   598] p0 o308     key=5   Antioquia          estrato 2 Templado  huella=   277.9 kg
+[   599] p0 o309     key=17  Caldas             estrato 1 Frío      huella=   131.1 kg
+[   600] p0 o310     key=15  Boyacá             estrato 2 Frío      huella=  2827.4 kg
+Eventos publicados: 600. Para continuar donde quedó: --skip 600

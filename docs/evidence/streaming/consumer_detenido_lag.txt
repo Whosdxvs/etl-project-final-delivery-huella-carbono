@@ -1,0 +1,12 @@
+# 2026-11-19 02:47:32 UTC — consumidor detenido hace ~40 s; el productor sigue publicando
+$ kafka-consumer-groups --describe --group huella-stream-consumer
+Consumer group 'huella-stream-consumer' has no active members.
+GROUP                  TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID     HOST            CLIENT-ID
+huella-stream-consumer huella-events   0          171             239             68              -               -               -
+huella-stream-consumer huella-events   1          106             143             37              -               -               -
+huella-stream-consumer huella-events   2          54              74              20              -               -               -
+
+$ kafka-run-class kafka.tools.GetOffsetShell --topic huella-events-dlq  (mensajes en la DLQ por partición)
+huella-events-dlq:0:8
+huella-events-dlq:1:0
+huella-events-dlq:2:0

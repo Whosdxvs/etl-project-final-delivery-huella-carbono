@@ -46,7 +46,7 @@ interpretación debe decirlo.
 | R6 | kWh y CO₂ eléctrico: cálido vs templado/frío, por estrato | ECV + API IDEAM | `dim_clima.piso_termico`, `kwh_consumidos_estimados`, `emisiones_energia_kg` | kWh/mes y kg CO₂/año por piso térmico y estrato | [`sql/analytical_queries.sql`](../sql/analytical_queries.sql), bloque R6 | Página 2 — columnas de kWh por estrato y piso térmico | [`dashboard_p2_api_clima.png`](evidence/dashboard_p2_api_clima.png); [`r6_kwh_por_estrato_y_piso.png`](evidence/r6_kwh_por_estrato_y_piso.png) |
 | R7 | % hogares con aire acondicionado (P1077S11) y con ventilador (P1077S12) vs temperatura | ECV + API IDEAM | `dim_hogar.bien_p1077s11/12`, `dim_clima.temp_media_c` | % de hogares con equipo por departamento y su temperatura | [`sql/analytical_queries.sql`](../sql/analytical_queries.sql), bloque R7 | Página 2 — dispersión de temperatura contra % de hogares con ventilador y aire acondicionado | [`dashboard_p2_api_clima.png`](evidence/dashboard_p2_api_clima.png) |
 
-Los resultados de cada requisito y su interpretación están en la sección 22 del [README](../README.md#22-trazabilidad-requisito--kpi-de-extremo-a-extremo), con las cifras del Data Warehouse tras la corrida final.
+Los resultados de cada requisito y su interpretación están en la sección 7.2 del [README](../README.md#72-trazabilidad-requisito--kpi-de-extremo-a-extremo), con las cifras del Data Warehouse tras la corrida final.
 
 ---
 

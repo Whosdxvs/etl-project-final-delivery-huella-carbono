@@ -1,0 +1,737 @@
+{
+  "uid": "huella-streaming",
+  "title": "Huella de carbono — streaming en tiempo real",
+  "description": "Métricas del consumidor de Kafka (tablas stream_* del DW). Se refresca cada 5 s.",
+  "tags": [
+    "kafka",
+    "streaming",
+    "huella"
+  ],
+  "timezone": "browser",
+  "refresh": "5s",
+  "time": {
+    "from": "now-15m",
+    "to": "now"
+  },
+  "timepicker": {
+    "refresh_intervals": [
+      "5s",
+      "10s",
+      "30s",
+      "1m"
+    ]
+  },
+  "schemaVersion": 39,
+  "version": 1,
+  "editable": false,
+  "panels": [
+    {
+      "id": 1,
+      "type": "stat",
+      "title": "Eventos válidos procesados",
+      "description": "Hogares re-emitidos por el productor que pasaron el contrato y se guardaron en stream_events.",
+      "datasource": {
+        "type": "mysql",
+        "uid": "dw-mysql"
+      },
+      "gridPos": {
+        "x": 0,
+        "y": 0,
+        "w": 4,
+        "h": 4
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {
+            "type": "mysql",
+            "uid": "dw-mysql"
+          },
+          "editorMode": "code",
+          "rawQuery": true,
+          "format": "table",
+          "rawSql": "SELECT eventos_validos AS valor FROM stream_metrics_snapshot ORDER BY snapshot_ts DESC LIMIT 1"
+        }
+      ],
+      "options": {
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "colorMode": "background",
+        "graphMode": "none",
+        "textMode": "value",
+        "justifyMode": "center"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "none",
+          "decimals": 0,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "blue",
+                "value": null
+              }
+            ]
+          }
+        },
+        "overrides": []
+      }
+    },
+    {
+      "id": 2,
+      "type": "stat",
+      "title": "Eventos en el último minuto",
+      "description": "Rendimiento del consumidor: eventos válidos procesados en los últimos 60 segundos. Baja a 0 si el productor se detiene.",
+      "datasource": {
+        "type": "mysql",
+        "uid": "dw-mysql"
+      },
+      "gridPos": {
+        "x": 4,
+        "y": 0,
+        "w": 4,
+        "h": 4
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {
+            "type": "mysql",
+            "uid": "dw-mysql"
+          },
+          "editorMode": "code",
+          "rawQuery": true,
+          "format": "table",
+          "rawSql": "SELECT eventos_ultimo_minuto AS valor FROM stream_metrics_snapshot ORDER BY snapshot_ts DESC LIMIT 1"
+        }
+      ],
+      "options": {
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "colorMode": "background",
+        "graphMode": "none",
+        "textMode": "value",
+        "justifyMode": "center"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "none",
+          "decimals": 0,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "purple",
+                "value": null
+              }
+            ]
+          }
+        },
+        "overrides": []
+      }
+    },
+    {
+      "id": 3,
+      "type": "stat",
+      "title": "Huella media acumulada",
+      "description": "Media de huella_total_anual_kg de todos los eventos válidos recibidos hasta ahora.",
+      "datasource": {
+        "type": "mysql",
+        "uid": "dw-mysql"
+      },
+      "gridPos": {
+        "x": 8,
+        "y": 0,
+        "w": 4,
+        "h": 4
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {
+            "type": "mysql",
+            "uid": "dw-mysql"
+          },
+          "editorMode": "code",
+          "rawQuery": true,
+          "format": "table",
+          "rawSql": "SELECT huella_media_kg AS valor FROM stream_metrics_snapshot ORDER BY snapshot_ts DESC LIMIT 1"
+        }
+      ],
+      "options": {
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "colorMode": "background",
+        "graphMode": "none",
+        "textMode": "value",
+        "justifyMode": "center"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "kg CO₂/año",
+          "decimals": 1,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              }
+            ]
+          }
+        },
+        "overrides": []
+      }
+    },
+    {
+      "id": 4,
+      "type": "stat",
+      "title": "Alertas de alta huella",
+      "description": "Hogares con huella mayor que el umbral (p95 histórico del DW).",
+      "datasource": {
+        "type": "mysql",
+        "uid": "dw-mysql"
+      },
+      "gridPos": {
+        "x": 12,
+        "y": 0,
+        "w": 4,
+        "h": 4
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {
+            "type": "mysql",
+            "uid": "dw-mysql"
+          },
+          "editorMode": "code",
+          "rawQuery": true,
+          "format": "table",
+          "rawSql": "SELECT alertas_alta_huella AS valor FROM stream_metrics_snapshot ORDER BY snapshot_ts DESC LIMIT 1"
+        }
+      ],
+      "options": {
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "colorMode": "background",
+        "graphMode": "none",
+        "textMode": "value",
+        "justifyMode": "center"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "none",
+          "decimals": 0,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "orange",
+                "value": null
+              }
+            ]
+          }
+        },
+        "overrides": []
+      }
+    },
+    {
+      "id": 5,
+      "type": "stat",
+      "title": "% eventos inválidos",
+      "description": "Eventos rechazados por el contrato sobre el total recibido. Van a stream_invalid_events y al topic huella-events-dlq.",
+      "datasource": {
+        "type": "mysql",
+        "uid": "dw-mysql"
+      },
+      "gridPos": {
+        "x": 16,
+        "y": 0,
+        "w": 4,
+        "h": 4
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {
+            "type": "mysql",
+            "uid": "dw-mysql"
+          },
+          "editorMode": "code",
+          "rawQuery": true,
+          "format": "table",
+          "rawSql": "SELECT pct_invalidos AS valor FROM stream_metrics_snapshot ORDER BY snapshot_ts DESC LIMIT 1"
+        }
+      ],
+      "options": {
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "colorMode": "background",
+        "graphMode": "none",
+        "textMode": "value",
+        "justifyMode": "center"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "percent",
+          "decimals": 2,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "orange",
+                "value": 0.5
+              },
+              {
+                "color": "red",
+                "value": 5
+              }
+            ]
+          }
+        },
+        "overrides": []
+      }
+    },
+    {
+      "id": 6,
+      "type": "stat",
+      "title": "Latencia media del último lote",
+      "description": "Tiempo entre la publicación (event_ts) y el procesamiento, en el último lote con eventos. Sube mucho si el consumidor estuvo detenido y procesa eventos atrasados.",
+      "datasource": {
+        "type": "mysql",
+        "uid": "dw-mysql"
+      },
+      "gridPos": {
+        "x": 20,
+        "y": 0,
+        "w": 4,
+        "h": 4
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {
+            "type": "mysql",
+            "uid": "dw-mysql"
+          },
+          "editorMode": "code",
+          "rawQuery": true,
+          "format": "table",
+          "rawSql": "SELECT latencia_media_ms AS valor FROM stream_metrics_snapshot\nWHERE latencia_media_ms IS NOT NULL ORDER BY snapshot_ts DESC LIMIT 1"
+        }
+      ],
+      "options": {
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "colorMode": "background",
+        "graphMode": "none",
+        "textMode": "value",
+        "justifyMode": "center"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "ms",
+          "decimals": 0,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "text",
+                "value": null
+              }
+            ]
+          }
+        },
+        "overrides": []
+      }
+    },
+    {
+      "id": 7,
+      "type": "timeseries",
+      "title": "Eventos procesados en el último minuto",
+      "description": "Cada punto es una foto de métricas del consumidor (cada lote o cada 5 s).",
+      "datasource": {
+        "type": "mysql",
+        "uid": "dw-mysql"
+      },
+      "gridPos": {
+        "x": 0,
+        "y": 4,
+        "w": 12,
+        "h": 8
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {
+            "type": "mysql",
+            "uid": "dw-mysql"
+          },
+          "editorMode": "code",
+          "rawQuery": true,
+          "format": "time_series",
+          "rawSql": "SELECT snapshot_ts AS time, eventos_ultimo_minuto AS `eventos/min`\nFROM stream_metrics_snapshot\nWHERE $__timeFilter(snapshot_ts)\nORDER BY snapshot_ts"
+        }
+      ],
+      "options": {
+        "legend": {
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {
+          "mode": "multi"
+        }
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "none",
+          "custom": {
+            "lineWidth": 2,
+            "fillOpacity": 10,
+            "showPoints": "never",
+            "spanNulls": true
+          }
+        },
+        "overrides": []
+      }
+    },
+    {
+      "id": 8,
+      "type": "timeseries",
+      "title": "Huella media acumulada y umbral de alerta",
+      "description": "La media se estabiliza a medida que llegan más hogares; el umbral es fijo (p95 del DW).",
+      "datasource": {
+        "type": "mysql",
+        "uid": "dw-mysql"
+      },
+      "gridPos": {
+        "x": 12,
+        "y": 4,
+        "w": 12,
+        "h": 8
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {
+            "type": "mysql",
+            "uid": "dw-mysql"
+          },
+          "editorMode": "code",
+          "rawQuery": true,
+          "format": "time_series",
+          "rawSql": "SELECT snapshot_ts AS time, huella_media_kg AS `huella media`, umbral_alerta_kg AS `umbral de alerta (p95)`\nFROM stream_metrics_snapshot\nWHERE $__timeFilter(snapshot_ts)\nORDER BY snapshot_ts"
+        }
+      ],
+      "options": {
+        "legend": {
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {
+          "mode": "multi"
+        }
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "kg CO₂/año",
+          "custom": {
+            "lineWidth": 2,
+            "fillOpacity": 10,
+            "showPoints": "never",
+            "spanNulls": true
+          }
+        },
+        "overrides": []
+      }
+    },
+    {
+      "id": 9,
+      "type": "timeseries",
+      "title": "kWh/mes medio: piso cálido contra templado/frío (R6 en vivo)",
+      "description": "Misma pregunta de R6, actualizada con cada evento: los hogares de departamentos cálidos consumen más.",
+      "datasource": {
+        "type": "mysql",
+        "uid": "dw-mysql"
+      },
+      "gridPos": {
+        "x": 0,
+        "y": 12,
+        "w": 12,
+        "h": 8
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {
+            "type": "mysql",
+            "uid": "dw-mysql"
+          },
+          "editorMode": "code",
+          "rawQuery": true,
+          "format": "time_series",
+          "rawSql": "SELECT snapshot_ts AS time, kwh_medio_calido AS `cálido`, kwh_medio_frio_templado AS `templado o frío`\nFROM stream_metrics_snapshot\nWHERE $__timeFilter(snapshot_ts)\nORDER BY snapshot_ts"
+        }
+      ],
+      "options": {
+        "legend": {
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {
+          "mode": "multi"
+        }
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "kWh/mes",
+          "custom": {
+            "lineWidth": 2,
+            "fillOpacity": 10,
+            "showPoints": "never",
+            "spanNulls": true
+          }
+        },
+        "overrides": []
+      }
+    },
+    {
+      "id": 10,
+      "type": "barchart",
+      "title": "kWh/mes medio por piso térmico (eventos recibidos)",
+      "description": "Consumo medio de los eventos recibidos en cada piso térmico; entre paréntesis, cuántos hogares lleva cada grupo.",
+      "datasource": {
+        "type": "mysql",
+        "uid": "dw-mysql"
+      },
+      "gridPos": {
+        "x": 12,
+        "y": 12,
+        "w": 12,
+        "h": 8
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {
+            "type": "mysql",
+            "uid": "dw-mysql"
+          },
+          "editorMode": "code",
+          "rawQuery": true,
+          "format": "table",
+          "rawSql": "SELECT CONCAT(piso_termico, ' (', COUNT(*), ' hogares)') AS `piso térmico`,\n       ROUND(AVG(kwh_mes),1) AS `kWh/mes medio`\nFROM stream_events GROUP BY piso_termico\nORDER BY FIELD(piso_termico, 'Cálido', 'Templado', 'Frío', 'Sin clima')"
+        }
+      ],
+      "options": {
+        "orientation": "horizontal",
+        "showValue": "always",
+        "legend": {
+          "showLegend": false,
+          "placement": "bottom",
+          "displayMode": "list"
+        },
+        "xField": "piso térmico",
+        "groupWidth": 0.7,
+        "barWidth": 0.9
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "kWh/mes",
+          "min": 0,
+          "color": {
+            "mode": "fixed",
+            "fixedColor": "yellow"
+          }
+        },
+        "overrides": []
+      }
+    },
+    {
+      "id": 11,
+      "type": "table",
+      "title": "Últimas alertas de alta huella",
+      "description": "Hogares que superaron el umbral, del más reciente al más antiguo.",
+      "datasource": {
+        "type": "mysql",
+        "uid": "dw-mysql"
+      },
+      "gridPos": {
+        "x": 0,
+        "y": 20,
+        "w": 12,
+        "h": 9
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {
+            "type": "mysql",
+            "uid": "dw-mysql"
+          },
+          "editorMode": "code",
+          "rawQuery": true,
+          "format": "table",
+          "rawSql": "SELECT processed_at AS procesado, nombre_departamento AS departamento, estrato,\n       piso_termico AS `piso térmico`, ROUND(huella_total_anual_kg,1) AS `huella kg/año`\nFROM stream_events WHERE alta_huella = 1\nORDER BY processed_at DESC LIMIT 15"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "type": "table",
+      "title": "Últimos eventos inválidos (rechazados por el contrato)",
+      "description": "Motivo de rechazo de cada evento que no cumplió el contrato (partición y offset en Kafka).",
+      "datasource": {
+        "type": "mysql",
+        "uid": "dw-mysql"
+      },
+      "gridPos": {
+        "x": 12,
+        "y": 20,
+        "w": 12,
+        "h": 9
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {
+            "type": "mysql",
+            "uid": "dw-mysql"
+          },
+          "editorMode": "code",
+          "rawQuery": true,
+          "format": "table",
+          "rawSql": "SELECT received_at AS recibido, CONCAT('p', kafka_partition, ' o', kafka_offset) AS `posición`,\n       event_key AS llave, error AS motivo\nFROM stream_invalid_events ORDER BY received_at DESC LIMIT 15"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "recibido"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 175
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "posición"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 80
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "llave"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 55
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 13,
+      "type": "bargauge",
+      "title": "Huella media por departamento (eventos recibidos, top 10)",
+      "description": "Solo departamentos con al menos 5 eventos, para no destacar medias de 1 o 2 hogares.",
+      "datasource": {
+        "type": "mysql",
+        "uid": "dw-mysql"
+      },
+      "gridPos": {
+        "x": 0,
+        "y": 29,
+        "w": 24,
+        "h": 9
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {
+            "type": "mysql",
+            "uid": "dw-mysql"
+          },
+          "editorMode": "code",
+          "rawQuery": true,
+          "format": "table",
+          "rawSql": "SELECT nombre_departamento AS departamento, ROUND(AVG(huella_total_anual_kg),1) AS huella\nFROM stream_events GROUP BY nombre_departamento HAVING COUNT(*) >= 5\nORDER BY huella DESC LIMIT 10"
+        }
+      ],
+      "options": {
+        "orientation": "horizontal",
+        "displayMode": "gradient",
+        "showUnfilled": true,
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": true
+        }
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "kg CO₂/año",
+          "min": 0
+        },
+        "overrides": []
+      }
+    }
+  ]
+}

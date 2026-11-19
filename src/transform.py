@@ -5,7 +5,7 @@ Parte 1 (ECV): se conserva la logica de la fase 1 (limpieza, kWh por tarifa, emi
 Parte 2 (API): temperatura media por departamento = sum(suma) / sum(n) sobre las ventanas.
 Parte 3 (integracion): se une por DEPARTAMENTO (codigo DANE) y se agrega dim_clima.
 
-CONTRATO DE INTEGRACION (para el README, seccion 12)
+CONTRATO DE INTEGRACION (para el README, seccion 4.2)
   Estrato ........... P8520S1A1 (estrato para tarifa), de "Datos de la vivienda".
   Llave ECV ........ P1_DEPARTAMENTO (codigo DANE numerico), de "Datos de la vivienda".
   Llave API ........ departamento (texto del IDEAM) normalizado a minusculas, sin tildes ni

@@ -1,0 +1,6 @@
+# Dependencias de los scripts de streaming (kafka/), que corren en el equipo, fuera de Docker.
+# Instalar con:  pip install -r requirements-streaming.txt
+# Probado con Python 3.13. kafka-python 3.x es necesario para Python 3.12 o superior.
+kafka-python==3.0.13
+PyMySQL==1.2.4
+python-dotenv==1.2.4

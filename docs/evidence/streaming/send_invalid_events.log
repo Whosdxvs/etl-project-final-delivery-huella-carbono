@@ -1,0 +1,8 @@
+Enviado evento inválido -> p0 o75: JSON mal formado
+Enviado evento inválido -> p0 o76: falta huella_total_anual_kg
+Enviado evento inválido -> p0 o77: kwh_mes es texto
+Enviado evento inválido -> p0 o78: estrato 9 fuera de rango
+Enviado evento inválido -> p0 o79: huella negativa
+Enviado evento inválido -> p0 o80: llave 05 no coincide con departamento 76
+Enviado evento inválido -> p0 o81: huella menor que energía + cocción
+Enviado evento inválido -> p0 o82: event_ts no es ISO 8601 UTC

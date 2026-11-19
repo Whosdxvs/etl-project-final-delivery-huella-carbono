@@ -1,0 +1,11 @@
+# Carga automática del dashboard en tiempo real desde grafana/dashboards/
+apiVersion: 1
+providers:
+  - name: huella-streaming
+    folder: Huella de carbono
+    type: file
+    disableDeletion: true
+    allowUiUpdates: false
+    updateIntervalSeconds: 30
+    options:
+      path: /var/lib/grafana/dashboards
