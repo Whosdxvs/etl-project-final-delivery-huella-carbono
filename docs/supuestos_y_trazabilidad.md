@@ -38,15 +38,15 @@ interpretación debe decirlo.
 
 | Req. | Pregunta | Datos | Dimensiones / medida | KPI | Consulta SQL | Gráfica del dashboard | Evidencia |
 |---|---|---|---|---|---|---|---|
-| R1 | Huella por estrato | ECV servicios | `dim_ubicacion.estrato`, `huella_total_anual_kg` | Huella media por estrato | `sql/` (pendiente) | pendiente | `docs/evidence/` (pendiente) |
-| R2 | Cocina por combustible | ECV servicios | `dim_combustibles`, `emisiones_coccion_kg` | Emisiones medias por combustible | pendiente | pendiente | pendiente |
-| R3' | Huella con vs sin vehículo, por estrato | ECV condiciones | `dim_hogar.tiene_vehiculo`, `dim_ubicacion.estrato` | Huella media por estrato y tenencia de vehículo | pendiente | pendiente | pendiente |
-| R4 | Por departamento | ECV vivienda | `dim_ubicacion.nombre_departamento` | Huella media por departamento | pendiente | pendiente | pendiente |
-| R5 | Por tamaño del hogar | ECV características | `dim_hogar.num_personas` | Huella por persona | pendiente | pendiente | pendiente |
-| R6 | kWh y CO₂ eléctrico: cálido vs templado/frío, por estrato | ECV + API IDEAM | `dim_clima.piso_termico`, `kwh_consumidos_estimados`, `emisiones_energia_kg` | kWh/mes y kg CO₂/año por piso térmico y estrato | pendiente | pendiente | pendiente |
-| R7 | % hogares con aire acondicionado (P1077S11) y con ventilador (P1077S12) vs temperatura | ECV + API IDEAM | `dim_hogar.bien_p1077s11/12`, `dim_clima.temp_media_c` | % de hogares con equipo por departamento y su temperatura | pendiente | pendiente | pendiente |
+| R1 | Huella por estrato | ECV servicios | `dim_ubicacion.estrato`, `huella_total_anual_kg` | Huella media por estrato | [`sql/analytical_queries.sql`](../sql/analytical_queries.sql), bloque R1 | Página 1 — columnas por estrato | [`dashboard_p1_huella_residencial.png`](evidence/dashboard_p1_huella_residencial.png) |
+| R2 | Cocina por combustible | ECV servicios | `dim_combustibles`, `emisiones_coccion_kg` | Emisiones medias por combustible | [`sql/analytical_queries.sql`](../sql/analytical_queries.sql), bloque R2 | Página 1 — barras por combustible de cocina | [`dashboard_p1_huella_residencial.png`](evidence/dashboard_p1_huella_residencial.png) |
+| R3' | Huella con vs sin vehículo, por estrato | ECV condiciones | `dim_hogar.tiene_vehiculo`, `dim_ubicacion.estrato` | Huella media por estrato y tenencia de vehículo | [`sql/analytical_queries.sql`](../sql/analytical_queries.sql), bloque R3 | Página 1 — barras por estrato y tenencia de carro | [`dashboard_p1_huella_residencial.png`](evidence/dashboard_p1_huella_residencial.png) |
+| R4 | Por departamento | ECV vivienda | `dim_ubicacion.nombre_departamento` | Huella media por departamento | [`sql/analytical_queries.sql`](../sql/analytical_queries.sql), bloque R4 | Página 1 — barras de huella per cápita por departamento | [`dashboard_p1_huella_residencial.png`](evidence/dashboard_p1_huella_residencial.png) |
+| R5 | Por tamaño del hogar | ECV características | `dim_hogar.num_personas` | Huella por persona | [`sql/analytical_queries.sql`](../sql/analytical_queries.sql), bloque R5 | Página 1 — líneas por tamaño del hogar | [`dashboard_p1_huella_residencial.png`](evidence/dashboard_p1_huella_residencial.png) |
+| R6 | kWh y CO₂ eléctrico: cálido vs templado/frío, por estrato | ECV + API IDEAM | `dim_clima.piso_termico`, `kwh_consumidos_estimados`, `emisiones_energia_kg` | kWh/mes y kg CO₂/año por piso térmico y estrato | [`sql/analytical_queries.sql`](../sql/analytical_queries.sql), bloque R6 | Página 2 — columnas de kWh por estrato y piso térmico | [`dashboard_p2_api_clima.png`](evidence/dashboard_p2_api_clima.png); [`r6_kwh_por_estrato_y_piso.png`](evidence/r6_kwh_por_estrato_y_piso.png) |
+| R7 | % hogares con aire acondicionado (P1077S11) y con ventilador (P1077S12) vs temperatura | ECV + API IDEAM | `dim_hogar.bien_p1077s11/12`, `dim_clima.temp_media_c` | % de hogares con equipo por departamento y su temperatura | [`sql/analytical_queries.sql`](../sql/analytical_queries.sql), bloque R7 | Página 2 — dispersión de temperatura contra % de hogares con ventilador y aire acondicionado | [`dashboard_p2_api_clima.png`](evidence/dashboard_p2_api_clima.png) |
 
-Cada fila "pendiente" se completa con la consulta real, la captura legible del dashboard y su interpretación.
+Los resultados de cada requisito y su interpretación están en la sección 22 del [README](../README.md#22-trazabilidad-requisito--kpi-de-extremo-a-extremo), con las cifras del Data Warehouse tras la corrida final.
 
 ---
 

@@ -904,38 +904,6 @@ La tabla completa de reglas (DQ01 a DQ30) y los resultados de validación de cad
 - **Solo CO₂.** La huella se mide en kg de CO₂, no en CO₂ equivalente: no incluye CH₄ ni N₂O.
 - **Muestra, no población.** Las cifras describen los 86.848 hogares de la muestra de la ECV. El pipeline no aplica factores de expansión, así que no son totales nacionales.
 
-
-## 🚀 Fase 3: Procesamiento en Tiempo Real (Streaming con Apache Kafka)
-
-Como parte de la evolución del proyecto hacia una arquitectura orientada a eventos, en esta tercera fase se incorporó **Apache Kafka** y **Zookeeper** para el procesamiento y transmisión en tiempo real de los Key Performance Indicators (KPIs) extraídos del Data Warehouse (`mysql-dw`).
-
-### 📦 Componentes Implementados
-- **Broker de Kafka y Zookeeper:** Integrados en la infraestructura mediante contenedores Docker (`docker-compose.yaml`), operando en el puerto `9092`.
-- **Productor (`kafka/producer_metrics.py`):** Script encargado de conectarse al Data Warehouse en MySQL, calcular métricas consolidadas (huella de carbono promedio, consumo eléctrico y emisiones de cocción) y transmitirlas continuamente en formato JSON hacia el *topic* `huella-metrics-topic`.
-- **Consumidor (`kafka/consumer_metrics.py`):** Script suscrito al canal de streaming que procesa y visualiza en tiempo real las métricas transmitidas.
-
-### 📊 Evidencias de Ejecución (Streaming en Vivo)
-
-A continuación se muestra el funcionamiento del pipeline en tiempo real, evidenciando el envío continuo de métricas por parte del productor y la recepción instantánea por el consumidor:
-
-**Productor de Métricas (Kafka):**
-![Productor Streaming Live](./docs/producer_streaming_live.png)
-
-**Consumidor de Métricas (Kafka):**
-![Consumidor Streaming Live](./docs/consumer_streaming_live.png)
-
-### ⚙️ Cómo ejecutar el streaming en vivo
-
-1. Asegúrar de que todos los servicios de Docker estén activos:
-   ```bash
-   docker compose up -d
-
- Iniciar el Consumidor en una terminal:  
- python kafka/consumer_metrics.py
-
- Iniciar el Productor en una segunda terminal independiente:
- python kafka/producer_metrics.py
-
 ## 25. Integrantes y responsabilidades
 
 | Integrante | Rol |
@@ -944,3 +912,74 @@ A continuación se muestra el funcionamiento del pipeline en tiempo real, eviden
 | David Aponte | Persona 2 — API y calidad de datos |
 | Diana Panesso | Persona 3 — Transformación, integración y modelo |
 | Sebastián Celorio | Persona 4 — Analítica, dashboard y documentación |
+
+## 26. Fase 3: procesamiento en tiempo real (streaming con Apache Kafka)
+
+En la tercera fase se agregaron **Apache Kafka** y **Zookeeper** para transmitir en tiempo real los KPI calculados sobre el Data Warehouse (`mysql-dw`). Es una base inicial de una arquitectura orientada a eventos: el productor lee el DW y publica métricas; el consumidor las recibe y las muestra.
+
+### Componentes
+
+| Componente | Archivo | Función |
+|---|---|---|
+| Broker de Kafka y Zookeeper | `docker-compose.yaml` (servicios `zookeeper` y `kafka`) | Imagen `confluentinc/cp-kafka:7.4.0`. Escucha en `localhost:9092` desde el equipo y en `kafka:29092` dentro de la red de Docker |
+| Productor | [`kafka/producer_metrics.py`](kafka/producer_metrics.py) | Cada 5 segundos consulta `fact_huella_carbono` en el DW y publica en el *topic* `huella-metrics-topic` un JSON con la huella media (kg CO₂/año), el consumo eléctrico medio (kWh/mes) y las emisiones medias de cocción |
+| Consumidor | [`kafka/consumer_metrics.py`](kafka/consumer_metrics.py) | Se suscribe a `huella-metrics-topic` y muestra cada mensaje nuevo a medida que llega (`auto_offset_reset='latest'`) |
+
+**Formato del mensaje:**
+
+```json
+{
+  "timestamp": "2026-11-18 10:30:00",
+  "metrics": {
+    "avg_huella_total": 859.0,
+    "avg_kwh_consumidos": 120.5,
+    "avg_emisiones_coccion": 300.2
+  }
+}
+```
+
+*(Valores ilustrativos; los reales salen del DW en cada envío.)*
+
+### Evidencia de ejecución
+
+El productor envía métricas continuamente y el consumidor las recibe al instante.
+
+**Productor:**
+
+![Productor de métricas enviando a Kafka](docs/producer_streaming_live.png)
+
+**Consumidor:**
+
+![Consumidor de métricas recibiendo desde Kafka](docs/consumer_streaming_live.png)
+
+### Cómo ejecutar el streaming
+
+Los dos scripts corren en el equipo (fuera de Docker) y se conectan a Kafka en `localhost:9092` y al DW en `localhost:3307`. Leen las credenciales de MySQL del archivo `.env` (variables `MYSQL_USER`, `MYSQL_PASSWORD` y `MYSQL_DATABASE`). Las direcciones se pueden cambiar con `KAFKA_BROKER`, `MYSQL_HOST` y `MYSQL_PORT`.
+
+1. Levantar los servicios y confirmar que el DW ya está cargado (sección 23):
+
+   ```bash
+   docker compose up -d
+   ```
+
+2. Instalar las librerías de los scripts (solo la primera vez):
+
+   ```bash
+   pip install kafka-python pymysql python-dotenv
+   ```
+
+3. En una terminal, iniciar el consumidor:
+
+   ```bash
+   python kafka/consumer_metrics.py
+   ```
+
+4. En otra terminal, iniciar el productor:
+
+   ```bash
+   python kafka/producer_metrics.py
+   ```
+
+5. Detener cada script con `Ctrl+C`.
+
+**Limitaciones actuales.** Las métricas se recalculan sobre el DW completo, así que solo cambian cuando el DAG recarga los datos. El consumidor muestra los mensajes pero no los guarda ni los agrega.
